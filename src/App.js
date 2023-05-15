@@ -1,18 +1,27 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Nvigtion from './header';
-import Navbarr from './Navbarr';
-import Carousel from 'react-bootstrap/Carousel';
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Navbarr from './Components/Navbar/Navbarr';
+import { Route, Routes, } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Computerglass from './Components/Computerglass/Computerglass';
+import Kidsglass from './Components/kidsglass/Kidsglass';
+import Contactlenses from './Components/contact lenses/Contactlenses';
+import Sunglass from './Components/sun glass/Sunglass';
+import Storelocator from './Components/store locator/Storelocator';
 
 function App() {
   return (
     <>
+    
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/computerglass' element={<Computerglass/>}></Route>
+      <Route path='/kidsglass' element={<Kidsglass/>}></Route>
+      <Route path='/contactlenses' element={<Contactlenses/>}></Route>
+      <Route path='/sunglass' element={<Sunglass/>}></Route>
+      <Route path='/storelocator' element={<Storelocator/>}></Route>
+    </Routes>
     <Navbarr/>
-    <Carosell/>
     </>
   );
 
