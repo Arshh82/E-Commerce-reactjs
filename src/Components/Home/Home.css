@@ -25,32 +25,60 @@
     padding-bottom: 2vh;
 }
 .ctdiva{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 100%;
     width:20%;
     position: relative;
 }
 .ctdivb{
-    background-color: rgb(247, 0, 95);
+    /* background-color: rgb(247, 0, 95); */
     height: 100%;
     width: 80%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .go{
     position: absolute;
     font-size: 11rem;
     margin-top: -15%;
     margin-left: 15%;
+    color: rgb(78, 2, 2);
 }
 .with{
     position: absolute;
     font-size: 4rem;
     margin-left: 20%;
     margin-top: 45%;
+    color: rgb(78, 2, 2);
 }
 .trend{
     position: absolute;
     font-size: 4rem;
     margin-top: 70%;
     margin-left: 5%;
+    color: rgb(78, 2, 2);
+    font-weight: 500;
+}
+.prodiv{
+    width: 10vw;
+    height: 20vh;
+    background-color: brown;
+    margin: 20px;
+}
+.cardAimg
+{
+    width: 240px;
+    height: 150px;
+}
+.Pname{
+    font-size: 2rem;
+}
+.carddiv{
+    width: 250px;
+    height: 280px;
+    margin: 20px;
+    /* background-color: aquamarine; */
 }

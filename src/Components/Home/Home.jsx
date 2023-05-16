@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
+import ProductA from '../../Apijson/ProductA';
+import CardA from './CardA';
 
 const Home = () => {
   let fi1 = new URL ("/public/images/HomeCarosel/cimg (1).jpg",import.meta.url)
@@ -58,13 +60,20 @@ const Home = () => {
       </div>
       <div className='tdiv'>
         <div className='ctdiva'>
-          <span className='go'>Go</span><br/>
+          <span className='go'>Go</span><br />
           <span className='with'>with</span><br />
           <span className='trend'>The Trend</span>
         </div>
-       <div className='ctdivb'>
-       <h3>DATA</h3>
-       </div>
+        <div className='ctdivb'>
+          <div className='prodiv'>
+          {ProductA.map(CardA)}
+          
+            
+          
+        
+          </div>
+          
+        </div>
       </div>
             </>
   )
