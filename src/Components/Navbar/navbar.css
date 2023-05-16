@@ -1,6 +1,17 @@
-.navvbar
-{
-    margin-top: 3vh;
-    height: 10npm i react-router-domvh;
+.navvbar {
     background-color: #f0eec0;
+    height: 10vh;
+    display: flex;
+}
+.nalink {
+    margin: .7vw;
+    color: #0f0325;
+    font-size: large;
+}
+.navicon {
+    margin: 10px;
+}
+.nlst {
+    position: relative;
+    margin-right: -120px;
 }

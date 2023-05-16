@@ -8,20 +8,21 @@ import Kidsglass from './Components/kidsglass/Kidsglass';
 import Contactlenses from './Components/contact lenses/Contactlenses';
 import Sunglass from './Components/sun glass/Sunglass';
 import Storelocator from './Components/store locator/Storelocator';
+import HomeC from './Components/Home/HomeC';
 
 function App() {
   return (
     <>
-    
+    <Navbarr/>
     <Routes>
-      <Route path='/' element={<Home/>}></Route>
+      <Route path='/' element={<HomeC/>}></Route>
       <Route path='/computerglass' element={<Computerglass/>}></Route>
       <Route path='/kidsglass' element={<Kidsglass/>}></Route>
       <Route path='/contactlenses' element={<Contactlenses/>}></Route>
       <Route path='/sunglass' element={<Sunglass/>}></Route>
       <Route path='/storelocator' element={<Storelocator/>}></Route>
-    </Routes>
-    <Navbarr/>
+    </Routes> 
+  
     </>
   );
 

@@ -1,0 +1,56 @@
+.homecaro {
+    width: 99vw;
+    padding-bottom: 2vh;
+}
+.sdiv {
+    width: 99vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2vh;
+}
+.stext {
+    position: absolute;
+    color: aliceblue;
+    font-size: 6.5rem;
+
+}
+.tdiv{
+    width: 99vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2vh;
+}
+.ctdiva{
+    background-color: aqua;
+    height: 100%;
+    width:20%;
+    position: relative;
+}
+.ctdivb{
+    background-color: rgb(247, 0, 95);
+    height: 100%;
+    width: 80%;
+    position: relative;
+}
+.go{
+    position: absolute;
+    font-size: 11rem;
+    margin-top: -15%;
+    margin-left: 15%;
+}
+.with{
+    position: absolute;
+    font-size: 4rem;
+    margin-left: 20%;
+    margin-top: 45%;
+}
+.trend{
+    position: absolute;
+    font-size: 4rem;
+    margin-top: 70%;
+    margin-left: 5%;
+}
