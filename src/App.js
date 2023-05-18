@@ -9,7 +9,7 @@ import Contactlenses from './Components/contact lenses/Contactlenses';
 import Sunglass from './Components/sun glass/Sunglass';
 import Storelocator from './Components/store locator/Storelocator';
 import HomeC from './Components/Home/HomeC';
-
+import Test from './Components/Test';
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
       <Route path='/contactlenses' element={<Contactlenses/>}></Route>
       <Route path='/sunglass' element={<Sunglass/>}></Route>
       <Route path='/storelocator' element={<Storelocator/>}></Route>
+      <Route path='/test' element={<Test/>}></Route>
     </Routes> 
   
     </>

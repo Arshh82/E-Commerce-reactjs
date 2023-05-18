@@ -5,11 +5,11 @@ import ProductA from '../../Apijson/ProductA';
 import CardA from './CardA';
 
 const Home = () => {
-  let fi1 = new URL ("/public/images/HomeCarosel/cimg (1).jpg",import.meta.url)
-  let fi2 = new URL ("/public/images/HomeCarosel/cimg (2).jpg",import.meta.url)
-  let fi3 = new URL ("/public/images/HomeCarosel/cimg (3).jpg",import.meta.url)
-  let fi4 = new URL ("/public/images/HomeCarosel/cimg (4).jpg",import.meta.url)
-  let fi5 = new URL ("/public/images/Sdiv/image-.JPG",import.meta.url)
+  let fi1 = new URL("/public/images/HomeCarosel/cimg (1).jpg", import.meta.url)
+  let fi2 = new URL("/public/images/HomeCarosel/cimg (2).jpg", import.meta.url)
+  let fi3 = new URL("/public/images/HomeCarosel/cimg (3).jpg", import.meta.url)
+  let fi4 = new URL("/public/images/HomeCarosel/cimg (4).jpg", import.meta.url)
+  let fi5 = new URL("/public/images/Sdiv/image-.JPG", import.meta.url)
   return (
     <>
       <Carousel className='homecaro'>
@@ -55,8 +55,8 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
       <div className='sdiv'>
-       <h3 className='stext'>Do More Be more</h3>
-       <img src={fi5} width='100%' height='100%' />
+        <h3 className='stext'>Do More Be more</h3>
+        <img src={fi5} width='100%' height='100%' />
       </div>
       <div className='tdiv'>
         <div className='ctdiva'>
@@ -66,13 +66,8 @@ const Home = () => {
         </div>
         <div className='ctdivb'>
           <div className='prodiv'>
-          {ProductA.map(CardA)}
-          
-            
-          
-        
+            {ProductA.map(CardA)}
           </div>
-          
         </div>
       </div>
             </>
