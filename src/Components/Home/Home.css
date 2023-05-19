@@ -32,16 +32,16 @@
 }
 
 .ctdiva {
-    /* background-color: aqua; */
-    height: 100%;
-    width: 20%;
+    background-color: aqua;
+    height: 50vh;
+    width: 20vw;
     position: relative;
 }
 
 .ctdivb {
     background-color: rgb(247, 0, 95);
-    height: 100%;
-    width: 80%;
+    height: 50vh;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
