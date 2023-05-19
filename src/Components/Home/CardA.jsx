@@ -6,16 +6,13 @@ import Carousel from 'react-bootstrap/Carousel';
 const CardA = (props) => {
   return (
     <>
-    
-    
-  
-    <img src={props.image} alt='no_img' className='cardAimg' /><br/>
-  
+    <div className='cardA'>
+    <img src={props.imag} alt='no_img' className='cardAimg' /><br/>
     <center>
     <p className='Pname'>{props.name}</p><br/>
     <button className='btn btn-success'>Explore More</button>
     </center>
-  
+    </div>
     
     </>
   )

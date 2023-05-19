@@ -12,12 +12,14 @@ const Home = () => {
   let fi5 = new URL("/public/images/Sdiv/image-.JPG", import.meta.url)
   return (
     <>
+     <div className='containerr'>
       <Carousel className='homecaro'>
         <Carousel.Item>
           <img
             className="d-flex w-100"
             src={fi1}
             alt="First slide"
+            
           />
           <Carousel.Caption>
             <h3>New Upcoming  Summer Sale </h3>
@@ -65,10 +67,11 @@ const Home = () => {
           <span className='trend'>The Trend</span>
         </div>
         <div className='ctdivb'>
-          <div className='prodiv'>
+          
             {ProductA.map(CardA)}
-          </div>
+          
         </div>
+      </div>
       </div>
             </>
   )
