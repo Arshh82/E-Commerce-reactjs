@@ -28,7 +28,42 @@ let ProductA=[
     image:"https://drive.google.com/uc?export=view?&id=1ligcKzfuwsUChCBR0IebjNtpCtHIYvC4",
     name:"Demo Product ",
     price:"1200"
-  }
+  },
+  {
+    image:"https://drive.google.com/uc?export=view?&id=1ligcKzfuwsUChCBR0IebjNtpCtHIYvC4",
+    name:"Demo Product ",
+    price:"1200"
+  },
+
+  {
+    image:"https://drive.google.com/uc?export=view?&id=1ligcKzfuwsUChCBR0IebjNtpCtHIYvC4",
+    name:"Demo Product ",
+    price:"1200"
+  },
+
+  {
+    image:"https://drive.google.com/uc?export=view?&id=1ligcKzfuwsUChCBR0IebjNtpCtHIYvC4",
+    name:"Demo Product ",
+    price:"1200"
+  },
+  {
+    image:"https://drive.google.com/uc?export=view?&id=1ligcKzfuwsUChCBR0IebjNtpCtHIYvC4",
+    name:"Demo Product ",
+    price:"1200"
+  },
+  {
+    image:"https://drive.google.com/uc?export=view?&id=1ligcKzfuwsUChCBR0IebjNtpCtHIYvC4",
+    name:"Demo Product ",
+    price:"1200"
+  },
+  {
+    image:"https://drive.google.com/uc?export=view?&id=1ligcKzfuwsUChCBR0IebjNtpCtHIYvC4",
+    name:"Demo Product ",
+    price:"1200"
+  },
+ 
+  
+
 
 
 ]

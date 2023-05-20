@@ -10,6 +10,7 @@ import Sunglass from './Components/sun glass/Sunglass';
 import Storelocator from './Components/store locator/Storelocator';
 import HomeC from './Components/Home/HomeC';
 import Test from './Components/Test';
+import CaroselProducta from './Components/Home/CaroselProducta';
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
       <Route path='/sunglass' element={<Sunglass/>}></Route>
       <Route path='/storelocator' element={<Storelocator/>}></Route>
       <Route path='/test' element={<Test/>}></Route>
+      <Route path='/caroselProducta' element={<CaroselProducta/>}></Route>
     </Routes> 
   
     </>
