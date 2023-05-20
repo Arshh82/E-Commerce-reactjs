@@ -9,10 +9,35 @@ const Home = () => {
   let fi3 = new URL("/public/images/HomeCarosel/cimg (3).jpg", import.meta.url)
   let fi4 = new URL("/public/images/HomeCarosel/cimg (4).jpg", import.meta.url)
   let fi5 = new URL("/public/images/Sdiv/image-.JPG", import.meta.url)
+  let fi6 = new URL("/public/images/top glass/eyeglass.png", import.meta.url)
   return (
     <>
       <div className='homecontainer'>
       <div className='firstdiv'>
+      <div className='imgdiv'>
+        <div><img src={fi6} alt='no-img' className='imgeyecontrol'/></div>
+        <div><center className='headname'><h4>Eyeglass</h4></center></div>
+      </div>
+      <div className='imgdiv'>
+        <div><img src={fi6} alt='no-img' className='imgeyecontrol'/></div>
+        <div><center className='headname'><h4>Eyeglass</h4></center></div>
+      </div>
+      <div className='imgdiv'>
+      <div><img src={fi6} alt='no-img' className='imgeyecontrol'/></div>
+        <div><center className='headname'><h4>Eyeglass</h4></center></div>
+      </div>
+      <div className='imgdiv'>
+      <div><img src={fi6} alt='no-img' className='imgeyecontrol'/></div>
+        <div><center className='headname'><h4>Eyeglass</h4></center></div>
+      </div>
+      <div className='imgdiv'>
+      <div><img src={fi6} alt='no-img' className='imgeyecontrol'/></div>
+        <div><center className='headname'><h4>Eyeglass</h4></center></div>
+      </div>
+      <div className='imgdiv'>
+      <div><img src={fi6} alt='no-img' className='imgeyecontrol'/></div>
+        <div><center className='headname'><h4>Eyeglass</h4></center></div>
+      </div>
 </div>
        <div className='slidera'>
         <Carousel>
