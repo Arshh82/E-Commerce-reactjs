@@ -14,17 +14,16 @@ function App() {
   return (
     <>
     <Navbarr/>
-    <Routes>
-      <Route path='/' element={<Home/>}></Route>
-      <Route path='/computerglass' element={<Computerglass/>}></Route>
-      <Route path='/kidsglass' element={<Kidsglass/>}></Route>
-      <Route path='/contactlenses' element={<Contactlenses/>}></Route>
-      <Route path='/sunglass' element={<Sunglass/>}></Route>
-      <Route path='/storelocator' element={<Storelocator/>}></Route>
-      <Route path='/test' element={<Test/>}></Route>
-      <Route path='/caroselProducta' element={<CaroselProducta/>}></Route>
-    </Routes> 
-  
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/computerglass' element={<Computerglass />}></Route>
+        <Route path='/kidsglass' element={<Kidsglass />}></Route>
+        <Route path='/contactlenses' element={<Contactlenses />}></Route>
+        <Route path='/sunglass' element={<Sunglass />}></Route>
+        <Route path='/storelocator' element={<Storelocator />}></Route>
+        <Route path='/test' element={<Test />}></Route>
+        <Route path='/caroselProducta' element={<CaroselProducta />}></Route>
+      </Routes> 
     </>
   );
 
