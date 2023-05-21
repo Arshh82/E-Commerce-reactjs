@@ -2,7 +2,6 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
 import CaroselProducta from './CaroselProducta';
-import Navbarr from '../Navbar/Navbarr';
 
 const Home = () => {
   let fi1 = new URL("/public/images/HomeCarosel/cimg (1).jpg", import.meta.url)
@@ -16,6 +15,8 @@ const Home = () => {
   let fi9 = new URL("/public/images/top glass/contact lens.png", import.meta.url)
   let fi10 = new URL("/public/images/top glass/powerglass.PNG", import.meta.url)
   let fi11 = new URL("/public/images/top glass/power sunglass.PNG", import.meta.url)
+  let fi12 = new URL("/public/images/fourthdiv/img (36).jpg", import.meta.url)
+
   return (
     <>
      <div className='pcontainer'>
@@ -96,21 +97,34 @@ const Home = () => {
           </Carousel>
         </div>
         <div className='seconddiv'>
-          <h3 className='stext'>Do More Be more</h3>
+        <h4 className='stext'> <h4 style={{fontSize:'2rem'}}>Our Purpose</h4><br/></h4>
+          <h4 className='stext'> 
+          Do More Be more</h4>
           <img src={fi5} alt='No Img' width='100%' height='100%' />
         </div>
         <div className='thirddiv'>
           <div className='ctdiva'>
-            <span className='go'>Go</span><br />
-            <span className='with'>with</span><br />
-            <span className='trend'>The Trend</span>
+            <span className='go '>Go with Trend</span><br/>
           </div>
           <div className='ctdivb'>
             <CaroselProducta />
           </div>
         </div>
-        <div className='footer'>
+          <div className='fourthdiv'>
+          <div className='fourthdivtext'>
+          <p >Free Gold Membership<br/> for 2 Year</p>
+          <button className='buttonn btn btn-primary'>Shop Now</button>
+          </div>
+            <img
+              className="d-flex w-100"
+              src={fi12}
+              alt="Third slide"
+              
+            />
+            
 
+          </div>
+        <div className='footer'>
         </div>
       </div>
       </div>
