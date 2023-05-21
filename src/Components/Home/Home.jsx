@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
 import CaroselProducta from './CaroselProducta';
+import Navbarr from '../Navbar/Navbarr';
 
 const Home = () => {
   let fi1 = new URL("/public/images/HomeCarosel/cimg (1).jpg", import.meta.url)
@@ -17,6 +18,7 @@ const Home = () => {
   let fi11 = new URL("/public/images/top glass/power sunglass.PNG", import.meta.url)
   return (
     <>
+     <div className='pcontainer'>
       <div className='homecontainer'>
         <div className='firstdiv'>
           <div className='imgdiv'>
@@ -107,6 +109,10 @@ const Home = () => {
             <CaroselProducta />
           </div>
         </div>
+        <div className='footer'>
+
+        </div>
+      </div>
       </div>
      </>
   )

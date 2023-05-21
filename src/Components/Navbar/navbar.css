@@ -6,11 +6,9 @@
 }
 
 .navvbar {
-    background-color: #f0eec0;
+    background-color: #f8f8f2;
     height: 7vh;
     display: flex;
-    width: 100%;
-    position: relative;
     margin-bottom: 1vh;
 }
 .nalink {

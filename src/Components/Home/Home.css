@@ -4,12 +4,13 @@
 }
 
 .homecontainer {
-    width: 100vw;
+    width: 98vw;
+    margin-left: .5vw;
     height: 100vh;
 }
 
 .seconddiv {
-    width: 99vw;
+    width: auto;
     height: 35vh;
     display: flex;
     justify-content: center;
@@ -26,15 +27,17 @@
 }
 
 .thirddiv {
-    width: 100vw;
-    height: 50vh;
+    width: auto;
+    height: 43vh;
     display: flex;
     flex-direction: row;
     padding-bottom: 2vh;
+    margin-bottom: 1vh;
+    /* background-color: blueviolet; */
 }
 
 .ctdiva {
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 43vh;
     width: 20vw;
     display: flex;
@@ -46,7 +49,7 @@
 
 .go {
     position: absolute;
-    font-size: 180px;
+    font-size: 140px;
     margin-top: -25vh;
     margin-left: -2vw;
     color: rgb(78, 2, 2);
@@ -69,7 +72,7 @@
     font-weight: 500;
 }
 .ctdivb {
-    background-color: rgb(247, 0, 95);
+    /* background-color: rgb(247, 0, 95); */
     height: 43vh;
     width: 80vw;
     justify-content: center;
@@ -90,8 +93,8 @@
     max-width: 220px;
     min-height: 280px;
     max-height: 280px;
-    margin: 25px 25px 25px 25px ;
-    background-color: rgb(212, 212, 212);
+    margin: 25px 25px 25px 20px ;
+    /* background-color: rgb(212, 212, 212); */
 }
 .cardAimg {
     width: 220px;
@@ -105,7 +108,7 @@
 
 .slidera {
     height: 69vh;
-    width: 100vw;
+    width: auto;
     padding-bottom: .7vh;
 }
 
@@ -159,4 +162,9 @@
     min-height: auto;
     max-height: auto;
     margin-top: 1vh;
+}
+.footer{
+    width: auto;
+    height: 30vh;
+    background-color: rgb(224, 224, 224);
 }
