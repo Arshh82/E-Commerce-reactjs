@@ -25,10 +25,9 @@ import ProductA from '../../Apijson/ProductA';
    return (
        <div>
            <Carousel responsive={responsive}
-               transitionDuration={500}
                ssr={true}
-               autoPlay={true}
-               autoPlaySpeed={1500}>
+               autoPlay={false}
+               autoPlaySpeed={10500}>
                {ProductA.map((cc) => {
                    return (
                        <div className='cardA'>

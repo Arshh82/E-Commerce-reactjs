@@ -169,9 +169,23 @@
     font-size: 1.5rem;
     font-weight: 5400;
 }
+.fifthdiv{
+    width: auto;
+    margin: 1vh 1vh;
+    /* background-color: brown; */
 
+}
+.fifthdivtext{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 3.5rem;
+    margin: 13vh 0vh 0vw 70vw;
+    font-weight: 500;
+
+}
 .footer{
     width: auto;
     height: 30vh;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(62, 1, 175);
 }

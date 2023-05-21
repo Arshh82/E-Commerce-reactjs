@@ -16,6 +16,7 @@ const Home = () => {
   let fi10 = new URL("/public/images/top glass/powerglass.PNG", import.meta.url)
   let fi11 = new URL("/public/images/top glass/power sunglass.PNG", import.meta.url)
   let fi12 = new URL("/public/images/fourthdiv/img (36).jpg", import.meta.url)
+  let fi13 = new URL("/public/images/fifthdiv/img (32).jpg", import.meta.url)
 
   return (
     <>
@@ -111,18 +112,24 @@ const Home = () => {
           </div>
         </div>
           <div className='fourthdiv'>
-          <div className='fourthdivtext'>
-          <p >Free Gold Membership<br/> for 2 Year</p>
-          <button className='buttonn btn btn-primary'>Shop Now</button>
-          </div>
+            <div className='fourthdivtext'>
+              <p >Free Gold Membership<br /> for 2 Year</p>
+              <button className='buttonn btn btn-primary'>Shop Now</button>
+            </div>
             <img
               className="d-flex w-100"
               src={fi12}
-              alt="Third slide"
-              
-            />
-            
-
+              alt="Third slide" />
+          </div>
+          <div className='fifthdiv'>
+          <div className='fifthdivtext'>
+              <p >Spotlight-Worthy<br/> Sunglasses <br /> Buy 1 get 1 </p>
+              <button className='buttonn btn btn-primary'>Shop Now</button>
+            </div>
+            <img
+              className="d-flex w-100"
+              src={fi13}
+              alt="Third slide" />
           </div>
         <div className='footer'>
         </div>
