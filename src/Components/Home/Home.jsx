@@ -15,13 +15,12 @@ const Home = () => {
   let fi9 = new URL("/public/images/top glass/contact lens.png", import.meta.url)
   let fi10 = new URL("/public/images/top glass/powerglass.PNG", import.meta.url)
   let fi11 = new URL("/public/images/top glass/power sunglass.PNG", import.meta.url)
-  let fi12 = new URL("/public/images/fourthdiv/img (36).jpg", import.meta.url)
-  let fi13 = new URL("/public/images/fifthdiv/img (32).jpg", import.meta.url)
+ 
 
   return (
     <>
      <div className='pcontainer'>
-     <center>
+     
       <div className='homecontainer'>
         <div className='firstdiv'>
           <div className='imgdiv'>
@@ -55,7 +54,7 @@ const Home = () => {
           </div>
         </div>
        <div className='slidera'>
-          <Carousel>
+          <Carousel className='carocontrole'>
             <Carousel.Item>
               <img
                 className="d-flex w-100"
@@ -98,53 +97,65 @@ const Home = () => {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div className='seconddiv'>
-        <h4 className='stextt'> Our Purpose</h4>
-          <h4 className='stext'> 
-          Do More Be more</h4>
-          {/* <img src={fi5} className='sdivimg' alt='No Img' /> */}
-        </div>
-        <div className='thirddiv'>
-          <div className='ctdiva'>
-            <span className='go '>Go with Trend</span><br/>
+          <div className='seconddiv'>
+          <center>
+            <span className='seconddivtext'>Our Purpose <br/>Do More, Be more</span>
+            </center>
           </div>
-          <div className='ctdivb'>
-            <CaroselProducta />
+          <div className='thirddiv'>
+            <div className='ctdiva'>
+              <p className='go'>Go with <br/> Trend</p><br />
+            </div>
+            <div className='ctdivb'>
+              <CaroselProducta />
+            </div>
           </div>
-        </div>
           <div className='fourthdiv'>
             <div className='fourthdivtext'>
               <p >Free Gold Membership<br /> for 2 Year</p>
               <button className='button btn btn-primary'>Shop Now</button>
             </div>
-            <img
-              className="d-flex w-100"
-              src={fi12}
-              alt="Third slide" />
-          </div>
-          <div className='fifthdiv'>
-          <div className='fifthdivtext'>
-              <p >Spotlight-Worthy<br/> Sunglasses <br /> Buy 1 get 1 </p>
-              <button className='buttonn btn btn-primary '>Shop Now</button>
-            </div>
-            <img
-              className="fifimg d-flex w-100"
-              src={fi13}
-              alt="Third slide" />
-          </div>
-          <center>
-          <div className='sixthdiv sm container'>
 
           </div>
+          <div className='fifthdiv'>
+            <div className='fifthdivtext'>
+              <p>Spotlight-Worthy<br /> Sunglasses <br /> Buy 1 get 1 </p>
+              <button className='buttonn btn btn-primary '>Shop Now</button>
+            </div>
+
+          </div>
+
+          <center><hr></hr><h1>FIND THE PERFECT FIT</h1><hr></hr></center>
+          <center>
+            <div className='seventhhdiv'>
+              <div className='diva'>
+                <div className='a'></div>
+                <div className='b'></div>
+              </div>
+              <div className='divb'>
+                <div className='c'></div>
+                <div className='d'></div>
+                <div className='e'></div>
+              </div>
+
+            </div>
           </center>
+          <hr></hr>
+          <center>
+
+
+            <div className='sixthdiv sm container'>
+
+            </div>
+          </center>
+          
 
           <div className='footer sm'>
             <center>
-              <p className='footertexta'>Made By <span className='footertextb'>Arshil</span></p>
+              <p className='footertexta'>Created By <span className='footertextb'>Arshil</span></p>
             </center>
           </div>
         </div>
-        </center>
       </div>
      </>
   )

@@ -2,112 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
 .homecontainer {
     width: 98vw;
+    min-height: 100vh;
+    max-height: 100vh;
     margin-left: .5vw;
-    height: 100vh;
-}
-
-.seconddiv {
-    min-width: auto;
-    max-width: auto;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1vh;
-    background-color: black;
-}
-.sdivimg{
-    width: 100%;
-    height: 35vh;
-}
-.stext {
-    display: flex;
-    color: aliceblue;
-    font-size: 5rem;
-
-}
-.stextt {
-    display: flex;
-    color: aliceblue;
-    font-size: 3rem ;
-
-}
-
-
-.thirddiv {
-    width: auto;
-    height: 43vh;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2vh;
-    margin-bottom: 1vh;
-    /* background-color: blueviolet; */
-}
-
-.ctdiva {
-    /* background-color: aqua; */
-    height: 43vh;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-
-.go {
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: 4rem;
-    font-weight: 500;
-    margin-left: 5vw;
-    color: rgb(78, 2, 2);
-}
-
-.ctdivb {
-    /* background-color: rgb(247, 0, 95); */
-    height: 43vh;
-    width: 80vw;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-
-.Pname {
-    font-size: 30px;
-    margin-top: 2px;
-}
-
-
-.cardA {
-    min-width: 220px;
-    max-width: 220px;
-    min-height: 280px;
-    max-height: 280px;
-    margin: 25px 25px 25px 20px;
-    /* background-color: rgb(212, 212, 212); */
-}
-
-.cardAimg {
-    width: 220px;
-    height: 140px;
-}
-
-.procontainer {
-    scroll-behavior: smooth;
-    width: 90vw;
-}
-
-.slidera {
-    height: 69vh;
-    width: auto;
+    background-color: #F5F5DC;
 }
 
 .firstdiv {
@@ -130,7 +30,111 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
 
+.imageparent {
+    background-color: rgb(247, 243, 252);
+    min-width: 14vw;
+    max-width: 14vw;
+    height: 5vh;
+    border-radius: 8px;
+    margin-top: 1vh;
+}
+
+.imgeyecontrol {
+    position: absolute;
+    min-width: 13.5vw;
+    max-width: 13.5vw;
+    min-height: auto;
+    max-height: auto;
+    margin-top: 1vh;
+}
+
+/* -------------------first Div----------------------- */
+
+.slidera {
+    width: 100;
+    /* background-color: aqua; */
+    margin-bottom: 1vh;
+}
+
+.carocontrole {
+    width: 100%;
+    height: 100%;
+}
+
+.seconddiv {
+    width: auto;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 2vh;
+}
+
+.seconddivtext {
+    font-size: 8ch;
+    color: white;
+
+}
+
+
+.thirddiv {
+    width: auto;
+    height: 43vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2vh;
+    margin-bottom: 1vh;
+    margin-bottom: 5vh;
+    /* background-color: blueviolet; */
+}
+
+.ctdiva {
+    /* background-color: aqua; */
+    height: 43vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.go {
+    font-size: 4rem;
+    font-weight: 500;
+    color: rgb(78, 2, 2);
+}
+
+.ctdivb {
+    /* background-color: rgb(247, 0, 95); */
+    height: 43vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Pname {
+    font-size: 30px;
+    margin-top: 2px;
+}
+.cardA {
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 280px;
+    max-height: 280px;
+    margin: 25px 25px 25px 20px;
+    /* background-color: rgb(212, 212, 212); */
+}
+
+.cardAimg {
+    width: 220px;
+    height: 140px;
+}
+
+.procontainer {
+    scroll-behavior: smooth;
+    width: 90vw;
 }
 
 .headname {
@@ -150,31 +154,24 @@
     justify-content: center;
     border-radius: 20px;
     margin-top: 1vh;
-
-}
-
-.imgeyecontrol {
-    position: absolute;
-    min-width: 13.5vw;
-    max-width: 13.5vw;
-    min-height: auto;
-    max-height: auto;
-    margin-top: 1vh;
 }
 
 .fourthdiv {
     width: auto;
+    height: 60vh;
     /* background-color: rgb(150, 150, 250); */
+    background-image: url(/public/images/fourthdiv/image-fourth.jpg);
+    background-size: cover;
+    background-position-x: center;
     margin: 1vh 1vh;
 }
 
 .fourthdivtext {
-    position: absolute;
     font-size: 3rem;
-    margin: 7vw;
+    margin: 3vw;
     font-weight: 500;
-
-}
+    float: left;
+  }
 
 .buttonn {
     width: 200px;
@@ -185,26 +182,109 @@
 
 .fifthdiv {
     width: auto;
+    height: 60vh;
     margin: 1vh 1vh;
     /* background-color: brown; */
-
+    background-image: url(/public/images/fifthdiv/img-.jpg);
+    background-size: cover;
+    background-position-x: center;
 }
 
 .fifthdivtext {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    font-size: 3.5rem;
-    margin: 13vh 0vh 0vw 68vw;
+    font-size: 3rem;
+    float: right;
     font-weight: 500;
+    margin: 50px;
 
 }
 
 .sixthdiv {
     height: 20vh;
-    background-color: rgb(165, 2, 102);
+    background-color: #fef1c7;
     border-radius: 30px 30px 0px 0px;
 
+}
+
+.seventhhdiv {
+    width: auto;
+    height: 100vh;
+    /* background-color:aqua; */
+    display: flex;
+    flex-direction: row;
+}
+
+.diva {
+    /* background-color: chocolate; */
+    width: 50vw;
+    height: 100%;
+}
+
+.divb {
+    /* background-color: rgb(42, 30, 210); */
+    width: 50vw;
+    height: 100%;
+}
+
+.a {
+    width: 60%;
+    height: 66%;
+    /* background-color: cornflowerblue; */
+    margin: 5px;
+    float: right;
+    margin-right: 10;
+    background-image: url(/public/images/homepage/228A3712.jpg);
+    background-size: cover;
+    background-position-x: center;
+
+}
+
+.b {
+    width: 60%;
+    height: 32%;
+    /* background-color: cornflowerblue; */
+    background-image: url(/public/images/homepage/image-3.JPG);
+    background-size: cover;
+    background-position-x: center;
+    margin: 5px;
+    float: right;
+    margin-right: 10;
+}
+
+.c {
+    width: 56%;
+    height: 32%;
+    /* background-color: cyan; */
+    background-image: url(/public/images/homepage/prodesign.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin: 6px;
+    float: left;
+    margin-left: 10;
+}
+
+.d {
+    width: 56%;
+    height: 32%;
+    /* background-color: cyan; */
+    background-image: url(/public/images/homepage/image-.JPG);
+    background-size: cover;
+    background-position-x: center;
+    margin: 6px;
+    float: left;
+    margin-left: 10;
+}
+
+.e {
+    width: 56%;
+    height: 32%;
+    /* background-color: cyan; */
+    background-image: url(/public/images/homepage/image-2.JPG);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    margin: 6px;
+    float: left;
+    margin-left: 10;
 }
 
 .footer {
@@ -226,30 +306,30 @@
     font-weight: 600;
 }
 
+/* ----------------------------------------------------------- */
 @media (max-width: 767px) {
     .homecontainer {
         width: 100vw;
         height: 100vh;
         margin-left: auto;
     }
-    .headname{
+
+    .headname {
         font-size: .6rem;
         margin-top: .3vh;
     }
+
+    .slideraP {
+        width: auto;
+        height: 10vh;
+    }
+
     .firstdiv {
         width: 100%;
         height: auto;
         margin-bottom: 1vh;
     }
-    .imageparent {
-        background-color: rgb(247, 243, 252);
-        min-width: 14vw;
-        max-width: 14vw;
-        height: 5vh;
-        border-radius: 8px;
-        margin-top: 1vh;
-    
-    }
+
     .imgdiv {
         width: 15.5vw;
         height: 80%;
@@ -257,30 +337,18 @@
         margin: .5vw;
         border-radius: 3px;
     }
-    .slidera {
-        width: auto;
-        height: 22.5vh;
-    }
-    
+
+
     .seconddiv {
         width: auto;
         height: 15vh;
         margin-top: 1vh;
     }
-    .stext{
-        font-size: 1.5rem;
-        margin-top: 6vh;
-    }
-    .stextt{
-        font-size: .5rem;
-        margin-top: -1vh;
-    }
-    .sdivimg{
-        display: flex;
-        width: 98%;
-        height: 15vh;
 
+    .seconddivtext {
+        font-size: 3ch;
     }
+
     .cardAimg {
         width: 90px;
         height: 55px;
@@ -305,11 +373,11 @@
         min-height: 95px;
         max-height: 95px;
         margin: 5px 5px 15px 10px;
-        
+
     }
 
     .ctdivb {
-        
+
         height: 15vh;
         width: 80vw;
 
@@ -323,17 +391,17 @@
     }
 
     .ctdiva {
-        
+
         height: 15vh;
         width: 20vw;
-    
+
     }
 
     .thirddiv {
         width: auto;
         height: 15vh;
 
-        
+
     }
 
     .fourthdivtext {
