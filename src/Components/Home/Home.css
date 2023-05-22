@@ -14,7 +14,7 @@
 
 .firstdiv {
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     background-color: rgb(247, 243, 252);
     margin-bottom: 1.5vh;
     display: flex;
@@ -24,7 +24,7 @@
 
 .imgdiv {
     width: 15vw;
-    height: 90%;
+    height: 75%;
     background-color: rgb(255, 255, 255);
     margin: .5vw;
     border-radius: 20px;
@@ -42,6 +42,12 @@
     border-radius: 8px;
     margin-top: 1vh;
 }
+.imgdiv:hover{
+    -webkit-transition: .2s;
+    height: 22ch;
+    background:#E0E2E5;
+}
+
 
 .imgeyecontrol {
     position: absolute;
