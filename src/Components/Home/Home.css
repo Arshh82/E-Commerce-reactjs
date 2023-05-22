@@ -331,6 +331,7 @@
     width: auto;
     height: 15vh;
     background-color: #E0E2E5;
+
 }
 .image-box{
     display: flex;
@@ -349,9 +350,26 @@
     font-size: 3rem;
     font-weight: 600;
 }
+.footerlogo{
+    
+   margin-top: -18px;
+   position: relative;
+    
+}
 
+.logoo{
+
+    width: 3.5ch;
+    margin-left: 18px;
+}
 /* ----------------------------------------------------------- */
 @media (max-width: 767px) {
+    .brandlogo{
+        width: 6.5ch;
+        height: 6.5ch;
+        margin-left:40%;
+        margin-top: 0ch;
+    }
     .homecontainer {
         width: 100vw;
         height: 100vh;
@@ -370,7 +388,7 @@
 
     .firstdiv {
         width: 100%;
-        height: auto;
+        height: 17%;
         margin-bottom: 1vh;
     }
 
@@ -378,7 +396,7 @@
         width: 15.5vw;
         height: 80%;
         background-color: rgb(255, 255, 255);
-        margin: .5vw;
+        margi7n: .5vw;
         border-radius: 3px;
     }
 

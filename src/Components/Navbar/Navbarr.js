@@ -6,17 +6,25 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "../Navbar/navbar.css"
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Navbarr = () => {
+  let fi12 = new URL("/public/images/Brandlogo/metrix logo-.PNG", import.meta.url)
   return (
     <>
+    
       <Navbar expand="md" className='navvbar fixed-top'>
+      <Link to='/'>
+      <img src={fi12} alt='no_img' className='brandlogo  fixed-top'/> 
+      </Link>
         <Container>
+
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav
               className="me-auto my-8 my-lg-0 "
               navbarScroll>
+              
+              
               <Link to="/" className='nalink' style={{ textDecoration: 'none' }}>Eye Glass</Link>
               <Link to="/computerglass" className='nalink' style={{ textDecoration: 'none' }}>Computer Glass</Link>
               <Link to="/kidsglass" className='nalink' style={{ textDecoration: 'none' }}>Kids Glass</Link>

@@ -28,3 +28,10 @@
     position: relative;
     margin: auto;
 }
+.brandlogo{
+    width: 9ch;
+    height: 9ch;
+    background-color:#E0E2E5 ;
+    margin-left:3%;
+    border-radius: 0px 0px 10px 10px;
+}
