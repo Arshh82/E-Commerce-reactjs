@@ -34,7 +34,7 @@ import ProductA from '../../Apijson/ProductA';
                            <img src={cc.image} alt='no_img' className='cardAimg' /> <br />
                            <br/><center>
                                <p className='Pname'>{cc.name}</p><br/>
-                        <button className='btn btn-success'>Explore More</button>
+                        <button className='cardAbutn btn btn-success'>Explore More</button>
                            </center>
                        </div>
                    )

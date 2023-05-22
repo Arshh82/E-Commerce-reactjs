@@ -8,8 +8,10 @@ const CardA = (props) => {
     <div className='cardA'>
     <img src={props.image} alt='no_img' className='cardAimg' />
     <center>
+    <p>hello</p>
+    <button className=' btn btn-success'>Explore More</button>
     <p className='Pname'>{props.name}</p>
-    <button className='btn btn-success'>Explore More</button>
+    
     </center>
    
     </div>

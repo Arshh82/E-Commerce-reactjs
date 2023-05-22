@@ -21,6 +21,7 @@ const Home = () => {
   return (
     <>
      <div className='pcontainer'>
+     <center>
       <div className='homecontainer'>
         <div className='firstdiv'>
           <div className='imgdiv'>
@@ -98,10 +99,10 @@ const Home = () => {
           </Carousel>
         </div>
         <div className='seconddiv'>
-        <h4 className='stext'> <h4 style={{fontSize:'2rem'}}>Our Purpose</h4><br/></h4>
+        <h4 className='stextt'> Our Purpose</h4>
           <h4 className='stext'> 
           Do More Be more</h4>
-          <img src={fi5} alt='No Img' width='100%' height='100%' />
+          {/* <img src={fi5} className='sdivimg' alt='No Img' /> */}
         </div>
         <div className='thirddiv'>
           <div className='ctdiva'>
@@ -114,7 +115,7 @@ const Home = () => {
           <div className='fourthdiv'>
             <div className='fourthdivtext'>
               <p >Free Gold Membership<br /> for 2 Year</p>
-              <button className='buttonn btn btn-primary'>Shop Now</button>
+              <button className='button btn btn-primary'>Shop Now</button>
             </div>
             <img
               className="d-flex w-100"
@@ -124,16 +125,26 @@ const Home = () => {
           <div className='fifthdiv'>
           <div className='fifthdivtext'>
               <p >Spotlight-Worthy<br/> Sunglasses <br /> Buy 1 get 1 </p>
-              <button className='buttonn btn btn-primary'>Shop Now</button>
+              <button className='buttonn btn btn-primary '>Shop Now</button>
             </div>
             <img
-              className="d-flex w-100"
+              className="fifimg d-flex w-100"
               src={fi13}
               alt="Third slide" />
           </div>
-        <div className='footer'>
+          <center>
+          <div className='sixthdiv sm container'>
+
+          </div>
+          </center>
+
+          <div className='footer sm'>
+            <center>
+              <p className='footertexta'>Made By <span className='footertextb'>Arshil</span></p>
+            </center>
+          </div>
         </div>
-      </div>
+        </center>
       </div>
      </>
   )
