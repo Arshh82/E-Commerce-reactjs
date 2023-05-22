@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 .homecontainer {
     width: 98vw;
     min-height: 100vh;
     max-height: 100vh;
+    margin-top: 9vh;
     margin-left: .5vw;
     background-color: #F5F5DC;
 }
@@ -204,6 +206,15 @@
     border-radius: 30px 30px 0px 0px;
 
 }
+.sixthdivtext
+{
+    font-family: 'Jua', sans-serif;
+    font-size: 2.5ch;
+    font-weight: 100;
+    position: relative;
+    margin-top: 10px;
+    color: #b87932;
+}
 
 .seventhhdiv {
     width: auto;
@@ -286,11 +297,44 @@
     float: left;
     margin-left: 10;
 }
-
+.a:hover{
+    background-image: url(/public/images/hover/hover-a.JPG);
+    -webkit-transition: .5s;
+    background-position-x: center;
+    background-position-y: center;
+}
+.b:hover{
+    background-image: url(/public/images/hover/hover-b.JPG);
+    -webkit-transition: .5s;
+    background-position-x: center;
+    background-position-y: center;
+}
+.c:hover{
+    background-image: url(/public/images/hover/hover-c.JPG);
+    -webkit-transition: .5s;
+    background-position-x: center;
+    background-position-y: center;
+}
+.d:hover{
+    background-image: url(/public/images/hover/hover-d.JPG);
+    -webkit-transition: .5s;
+    background-position-x: center;
+    background-position-y: center;
+}
+.e:hover{
+    background-image: url(/public/images/hover/hover-e.JPG);
+    -webkit-transition: .5s;
+    background-position-x: center;
+    background-position-y: center;
+}
 .footer {
     width: auto;
     height: 15vh;
     background-color: #E0E2E5;
+}
+.image-box{
+    display: flex;
+    flex-direction: column;
 }
 
 .footertexta {

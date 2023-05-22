@@ -15,12 +15,12 @@ const Home = () => {
   let fi9 = new URL("/public/images/top glass/contact lens.png", import.meta.url)
   let fi10 = new URL("/public/images/top glass/powerglass.PNG", import.meta.url)
   let fi11 = new URL("/public/images/top glass/power sunglass.PNG", import.meta.url)
+  let fi12 = new URL("/public/images/sixthdiv/footer4.png", import.meta.url)
  
 
   return (
     <>
      <div className='pcontainer'>
-     
       <div className='homecontainer'>
         <div className='firstdiv'>
           <div className='imgdiv'>
@@ -127,6 +127,9 @@ const Home = () => {
 
           <center><hr></hr><h1>FIND THE PERFECT FIT</h1><hr></hr></center>
           <center>
+          <div className='hoverbox'>
+
+          </div>
             <div className='seventhhdiv'>
               <div className='diva'>
                 <div className='a'></div>
@@ -137,19 +140,16 @@ const Home = () => {
                 <div className='d'></div>
                 <div className='e'></div>
               </div>
-
             </div>
           </center>
           <hr></hr>
           <center>
-
-
-            <div className='sixthdiv sm container'>
-
+            <div className='sixthdiv sm container'><br/>
+            <img src={fi12}/>
+            <p className='sixthdivtext'>Available All Over India </p>
+           
             </div>
           </center>
-          
-
           <div className='footer sm'>
             <center>
               <p className='footertexta'>Created By <span className='footertextb'>Arshil</span></p>

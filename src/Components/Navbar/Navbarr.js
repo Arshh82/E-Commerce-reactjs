@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom';
 const Navbarr = () => {
   return (
     <>
-      <Navbar expand="md" className='navvbar'>
+      <Navbar expand="md" className='navvbar fixed-top'>
         <Container>
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav
-              className="me-auto my-8 my-lg-0"
+              className="me-auto my-8 my-lg-0 "
               navbarScroll>
               <Link to="/" className='nalink' style={{ textDecoration: 'none' }}>Eye Glass</Link>
               <Link to="/computerglass" className='nalink' style={{ textDecoration: 'none' }}>Computer Glass</Link>
