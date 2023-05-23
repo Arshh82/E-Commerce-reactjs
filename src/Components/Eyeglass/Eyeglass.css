@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding-left: .15vw;
+    padding-right: .5vw;
+}
+.eyeglassdiva
+
+{
+    width: 98vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10vh;
+ 
+    overflow: hidden;
+
+}
+.eyeglassdivb,.eyeglassdivc,.eyeglassdivd,
+.eyeglassdive,.eyeglassdivf,.eyeglassdivg,
+.eyeglassdivh,.eyeglassdivi{
+    width: 98vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0vh;
+}
+.carocc
+{
+    width: 300px;
+    height: 250px;
+    display: flex;
+}
+.eyeglassslideer{
+    width: 300px;
+    height: 200px;
+}
+.eyeglassslideerimg{
+    width: 300px;
+    height: 200px;
+}
+.EyeglassslidercardA {
+    min-width: 30vw;
+    max-width: 30vw;
+    min-height: 28.5vh;
+    max-height: 28.5vh;
+    margin: 7px 20px 25px 20px;
+    /* background-color: rgb(212, 212, 212); */
+}
+
+.Eyeglasssliderimg {
+    width: auto;
+    height: 28vh;
+}
+
+.procontainer {
+    scroll-behavior: smooth;
+    width: 90vw;
+}
+.btna{
+    border: none;
+    border-radius: none;
+    background-color: rgb(28, 180, 185);
+    width: 8vw;
+    height: 5vh;
+    font-weight: 600;
+    color: aliceblue;
+}

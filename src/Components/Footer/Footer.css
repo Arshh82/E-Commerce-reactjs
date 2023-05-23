@@ -1,0 +1,35 @@
+.footertexta {
+    font-size: xx-large;
+    font-weight: 500;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.footertextb {
+    font-family: 'Zeyada', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.footerlogo {
+
+    margin-top: -18px;
+    position: relative;
+
+}
+.logoo {
+
+    width: 5ch;
+    margin-left: 18px;
+}
+.footer {
+    width: 98vw;
+    height: 15vh;
+    background-color: #E0E2E5;
+
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+}

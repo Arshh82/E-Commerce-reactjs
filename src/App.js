@@ -10,12 +10,15 @@ import Sunglass from './Components/sun glass/Sunglass';
 import Storelocator from './Components/store locator/Storelocator';
 import Test from './Components/Test';
 import CaroselProducta from './Components/Home/CaroselProducta';
+import Eyeglass from './Components/Eyeglass/Eyeglass';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <>
     <Navbarr/>
       <Routes>
         <Route path='/' element={<Home />}></Route>
+        <Route path='/eyeglass' element={<Eyeglass />}></Route>
         <Route path='/computerglass' element={<Computerglass />}></Route>
         <Route path='/kidsglass' element={<Kidsglass />}></Route>
         <Route path='/contactlenses' element={<Contactlenses />}></Route>

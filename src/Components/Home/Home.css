@@ -3,6 +3,7 @@
     padding: 0;
 
 }
+
 .homecontainer {
     width: 98vw;
     min-height: 100vh;
@@ -42,10 +43,11 @@
     border-radius: 8px;
     margin-top: 1vh;
 }
-.imgdiv:hover{
+
+.imgdiv:hover {
     -webkit-transition: .2s;
     height: 22ch;
-    background:#E0E2E5;
+    background: #E0E2E5;
 }
 
 
@@ -64,6 +66,7 @@
     width: 100;
     /* background-color: aqua; */
     margin-bottom: 1vh;
+    display: flex;
 }
 
 .carocontrole {
@@ -108,6 +111,7 @@
     align-items: center;
 
 }
+
 .go {
     font-size: 4rem;
     font-weight: 500;
@@ -122,10 +126,12 @@
     align-items: center;
     overflow: hidden;
 }
+
 .Pname {
     font-size: 30px;
     margin-top: 2px;
 }
+
 .cardA {
     min-width: 220px;
     max-width: 220px;
@@ -179,7 +185,7 @@
     margin: 3vw;
     font-weight: 500;
     float: left;
-  }
+}
 
 .buttonn {
     width: 200px;
@@ -212,8 +218,8 @@
     border-radius: 30px 30px 0px 0px;
 
 }
-.sixthdivtext
-{
+
+.sixthdivtext {
     font-family: 'Jua', sans-serif;
     font-size: 2.5ch;
     font-weight: 100;
@@ -303,48 +309,59 @@
     float: left;
     margin-left: 10;
 }
-.a:hover{
+
+.a:hover {
     background-image: url(/public/images/hover/hover-a.JPG);
     -webkit-transition: .5s;
     background-position-x: center;
     background-position-y: center;
 }
-.b:hover{
+
+.b:hover {
     background-image: url(/public/images/hover/hover-b.JPG);
     -webkit-transition: .5s;
     background-position-x: center;
     background-position-y: center;
 }
-.c:hover{
+
+.c:hover {
     background-image: url(/public/images/hover/hover-c.JPG);
     -webkit-transition: .5s;
     background-position-x: center;
     background-position-y: center;
 }
-.d:hover{
+
+.d:hover {
     background-image: url(/public/images/hover/hover-d.JPG);
     -webkit-transition: .5s;
     background-position-x: center;
     background-position-y: center;
 }
-.e:hover{
+
+.e:hover {
     background-image: url(/public/images/hover/hover-e.JPG);
     -webkit-transition: .5s;
     background-position-x: center;
     background-position-y: center;
 }
-.footer {
+.footer{
+    position: absolute;
+
+}
+
+/* .footer {
     width: auto;
     height: 15vh;
     background-color: #E0E2E5;
 
 }
-.image-box{
+
+.image-box {
     display: flex;
     flex-direction: column;
-}
+} */
 
-.footertexta {
+/* .footertexta {
     font-size: xx-large;
     font-weight: 500;
     font-family: 'Pacifico', cursive;
@@ -356,26 +373,29 @@
     font-size: 3rem;
     font-weight: 600;
 }
-.footerlogo{
-    
-   margin-top: -18px;
-   position: relative;
-    
-}
 
-.logoo{
+.footerlogo {
+
+    margin-top: -18px;
+    position: relative;
+
+} */
+
+/* .logoo {
 
     width: 3.5ch;
     margin-left: 18px;
-}
+} */
+
 /* ----------------------------------------------------------- */
 @media (max-width: 767px) {
-    .brandlogo{
+    .brandlogo {
         width: 6.5ch;
         height: 6.5ch;
-        margin-left:40%;
+        margin-left: 40%;
         margin-top: 0ch;
     }
+
     .homecontainer {
         width: 100vw;
         height: 100vh;
