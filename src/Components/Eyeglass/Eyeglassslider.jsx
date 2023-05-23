@@ -2,7 +2,8 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import EyeglassApi from '../../Apijson/Eyeglasshome/EyeglassA';
-import { EyeglassApib,EyeglassApic } from '../../Apijson/Eyeglasshome/EyeglassA';
+import { EyeglassApib , EyeglassApic,EyeglassApid,EyeglassApie,EyeglassApif,EyeglassApig,EyeglassApih,EyeglassApii } from '../../Apijson/Eyeglasshome/EyeglassA';
+
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
@@ -21,6 +22,7 @@ const responsive = {
         items: 1
     }
 }
+let a = <EyeglassApi/>
 const Eyeglassslider = (cc) => {
     return (
         <div>
@@ -92,6 +94,150 @@ const Eyeglasssliderc = (cc) => {
 
     )
 }
+const Eyeglasssliderd = (cc) => {
+    return (
+        <div>
+            <Carousel responsive={responsive}
+                ssr={true}
+                autoPlay={false}
+                autoPlaySpeed={10500}
+                infinite={true}
+                customTransition="all .5"
+                transitionDuration={1}
+                containerClass="carousel-container">
+                {EyeglassApid.map((cc) => {
+                    return (
+                        <div className='EyeglassslidercardA'>
+                            <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
+                            <br />
+                        </div>
+                    )
+                })}
+            </Carousel>
+        </div>
+
+    )
+}
+const Eyeglassslidere = (cc) => {
+    return (
+        <div>
+            <Carousel responsive={responsive}
+                ssr={true}
+                autoPlay={false}
+                autoPlaySpeed={10500}
+                infinite={true}
+                customTransition="all .5"
+                transitionDuration={1}
+                containerClass="carousel-container">
+                {EyeglassApie.map((cc) => {
+                    return (
+                        <div className='EyeglassslidercardA'>
+                            <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
+                            <br />
+                        </div>
+                    )
+                })}
+            </Carousel>
+        </div>
+
+    )
+}
+const Eyeglasssliderf = (cc) => {
+    return (
+        <div>
+            <Carousel responsive={responsive}
+                ssr={true}
+                autoPlay={false}
+                autoPlaySpeed={10500}
+                infinite={true}
+                customTransition="all .5"
+                transitionDuration={1}
+                containerClass="carousel-container">
+                {EyeglassApif.map((cc) => {
+                    return (
+                        <div className='EyeglassslidercardA'>
+                            <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
+                            <br />
+                        </div>
+                    )
+                })}
+            </Carousel>
+        </div>
+
+    )
+}
+const Eyeglasssliderg = (cc) => {
+    return (
+        <div>
+            <Carousel responsive={responsive}
+                ssr={true}
+                autoPlay={false}
+                autoPlaySpeed={10500}
+                infinite={true}
+                customTransition="all .5"
+                transitionDuration={1}
+                containerClass="carousel-container">
+                {EyeglassApig.map((cc) => {
+                    return (
+                        <div className='EyeglassslidercardA'>
+                            <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
+                            <br />
+                        </div>
+                    )
+                })}
+            </Carousel>
+        </div>
+
+    )
+}
+const Eyeglasssliderh = (cc) => {
+    return (
+        <div>
+            <Carousel responsive={responsive}
+                ssr={true}
+                autoPlay={false}
+                autoPlaySpeed={10500}
+                infinite={true}
+                customTransition="all .5"
+                transitionDuration={1}
+                containerClass="carousel-container">
+                {EyeglassApih.map((cc) => {
+                    return (
+                        <div className='EyeglassslidercardA'>
+                            <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
+                            <br />
+                        </div>
+                    )
+                })}
+            </Carousel>
+        </div>
+
+    )
+}
+const Eyeglassslideri = (cc) => {
+    return (
+        <div>
+            <Carousel responsive={responsive}
+                ssr={true}
+                autoPlay={false}
+                autoPlaySpeed={10500}
+                infinite={true}
+                customTransition="all .5"
+                transitionDuration={1}
+                containerClass="carousel-container">
+                {EyeglassApii.map((cc) => {
+                    return (
+                        <div className='EyeglassslidercardA'>
+                            <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
+                            <br />
+                        </div>
+                    )
+                })}
+            </Carousel>
+        </div>
+
+    )
+}
 
 export default Eyeglassslider
-export {Eyeglasssliderb,Eyeglasssliderc}
+export {Eyeglasssliderb,Eyeglasssliderc,Eyeglasssliderd,Eyeglassslidere,Eyeglasssliderf,Eyeglasssliderg,Eyeglasssliderh,Eyeglassslideri}

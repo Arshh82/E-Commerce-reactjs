@@ -6,17 +6,15 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CaroselProducta from '../Home/CaroselProducta';
 import Eyeglassslider from './Eyeglassslider';
-import { Eyeglasssliderb,Eyeglasssliderc } from './Eyeglassslider';
+import { Eyeglasssliderb,Eyeglasssliderc,Eyeglasssliderd,Eyeglassslidere,Eyeglasssliderf,Eyeglasssliderg,Eyeglasssliderh,Eyeglassslideri} from './Eyeglassslider';
 const Eyeglass = () => {
   // let Api1 = new URL("/public/images/HomeCarosel/cimg (1).jpg", import.meta.url);
   return (
-  
-    
       <>
       <div className='eyeglassdiva'>
         <br />
         <center><h2>EXTRA 60% OFF | VOUCHER: SUMMER</h2></center>
-        <Eyeglassslider />
+        <Eyeglassslider/>
         <center><button className=' btna btn-primary'>VIEW RANGE</button></center>
       </div>
 
@@ -43,6 +41,7 @@ const Eyeglass = () => {
       <div className='eyeglassdivd'>
         <br />
         EyeglassD
+        <Eyeglasssliderd/>
         <center><h2>EXTRA 60% OFF | VOUCHER: SUMMER</h2></center>
         <center><button className=' btna btn-primary'>VIEW RANGE</button></center>
       </div>
@@ -52,6 +51,7 @@ const Eyeglass = () => {
       <div className='eyeglassdive'>
         <br />
         EyeglassE
+        <Eyeglassslidere/>
         <center><h2>EXTRA 60% OFF | VOUCHER: SUMMER</h2></center>
         <center><button className=' btna btn-primary'>VIEW RANGE</button></center>
       </div>
@@ -61,6 +61,7 @@ const Eyeglass = () => {
       <div className='eyeglassdivf'>
         <br />
         EyeglassF
+        <Eyeglasssliderf/>
         <center><h2>EXTRA 60% OFF | VOUCHER: SUMMER</h2></center>
         <center><button className=' btna btn-primary'>VIEW RANGE</button></center>
       </div>
@@ -70,6 +71,7 @@ const Eyeglass = () => {
       <div className='eyeglassdivg'>
         <br />
         EyeglassG
+        <Eyeglasssliderg/>
         <center><h2>EXTRA 60% OFF | VOUCHER: SUMMER</h2></center>
         <center><button className=' btna btn-primary'>VIEW RANGE</button></center>
       </div>
@@ -79,6 +81,7 @@ const Eyeglass = () => {
       <div className='eyeglassdivh'>
         <br />
         EyeglassH
+        <Eyeglasssliderh/>
         <center><h2>EXTRA 60% OFF | VOUCHER: SUMMER</h2></center>
         <center><button className=' btna btn-primary'>VIEW RANGE</button></center>
       </div>
@@ -88,9 +91,12 @@ const Eyeglass = () => {
       <div className='eyeglassdivi'>
         <br />
         EyeglassI
+        <Eyeglassslideri/>
         <center><h2>EXTRA 60% OFF | VOUCHER: SUMMER</h2></center>
         <center><button className=' btna btn-primary'>VIEW RANGE</button></center>
       </div>
+      <br/>
+      <div></div>
 
       <Footer/>
       </>
