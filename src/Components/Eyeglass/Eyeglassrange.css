@@ -30,7 +30,8 @@
     width: 90vw;
     height: 100vh;
     overflow-y:scroll;
-    background-color: chartreuse;
+    scroll:hidden;
+    /* background-color: chartreuse; */
 }
 .eyesglassrangecard{
     float: left;
@@ -46,25 +47,46 @@
     position: relative;
     display: non;
 }
-.imagen{
-    display: n;
+.cardd{
+    position: relative;
+    width: 100%;
+}
+.cardd:hover{
+    display:none;
 
 }
-.imagen:hover{
-    display:none
+.imgcarddd{
+    width: auto;
+    height: 22.5vh;
+    /* background-color: brown; */
+    overflow: hidden;
+    padding: 0px 40px 40px 40px;
+    
 
 }
+.carddb{
+    position: relative;
+    width: 100%;
+    
+}
+
 .cardimage{
     background-color: blueviolet;
     min-width: auto;
     max-width: auto;
     min-height: 28ch;
     max-height: 28ch;
+    overflow: hidden;
 }
 .carda{
     float: left;
-    margin: 20px 20px 20px 20px;
-    width: 45ch;
+    margin: 15px 10px 12px 15px;
+    width: 50ch;
+    border-width: 0.1px;
+    min-width: auto;
+    max-width: auto;
+    min-height: 38ch;
+    max-height: 38ch;
 }
 .cont{
   

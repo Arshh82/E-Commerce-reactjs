@@ -28,35 +28,44 @@ const EyeglassrangeCard = () => {
     //    )})}
     //  </div>
     <>
-    {Eyeglassrangeapi.map( (cc)=> {
-            return(
-     <section  style={{backgroundColor: '#eee;'}}>
-    <div class="">
-    <div class="coloumn justify-content-center ">
-      <div class="col-md-8 col-lg-6 col-xl-3 carda ">
-        <div class="card text-black">
-          <img
-            src={cc.image}
-            class="card-img-top"
-            alt="Apple Computer"
-          />
-          <div class="card-body">
-            <div class="text-center">
-              <h5 class="card-title">Believing is seeing</h5>
-              <p class="text-muted mb-4">Apple pro display XDR</p>
-            </div>
-            <div>
-              <div class="d-flex justify-content-between">
-                <span>Pro Display XDR</span><span>$5,999</span>
+      {Eyeglassrangeapi.map((cc) => {
+        return (
+          <section style={{ backgroundColor: '#eee;' }}>
+            <div class="">
+              <div class="coloumn justify-content-start ">
+                <div class="col-md-8 col-lg-6 col-xl-3 carda ">
+                  <div class="card text-black">
+                  <div className='imgcarddd'>
+                    <img
+                      src={cc.image}
+                      class="cardd -img-top"
+                      alt="Glass_image"
+                    />
+                    <img
+                      src={cc.imagehov}
+                      class="carddb -img-top"
+                      alt="Glass_image"
+                    />
+                    </div>
+                    <div class="card-body">
+                      <div class="text-start">
+                        <h5 class="card-title">{cc.name}</h5>
+                        <h6 class="text-info mb-2">Size {cc.size}</h6>
+                        <h6>Rs. {cc.amount} <span className='text-muted'>(+tax)</span></h6>
+                      </div>
+                      <div>
+                        <div class="d-flex justify-content-center">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-            )})}
+          </section>
+        )
+      })}
             </>
   )
 }
