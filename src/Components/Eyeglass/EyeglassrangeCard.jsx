@@ -31,9 +31,9 @@ const EyeglassrangeCard = () => {
     {Eyeglassrangeapi.map( (cc)=> {
             return(
      <section  style={{backgroundColor: '#eee;'}}>
-    <div class="cont">
-    <div class="coloumn justify-content-start">
-      <div class="col-md-8 col-lg-6 col-xl-3 carda">
+    <div class="">
+    <div class="coloumn justify-content-center ">
+      <div class="col-md-8 col-lg-6 col-xl-3 carda ">
         <div class="card text-black">
           <img
             src={cc.image}

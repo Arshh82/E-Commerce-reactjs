@@ -22,7 +22,7 @@
     display: flex;
 }
 .seconddiva{
-    width: 10vw;
+    width: 12vw;
     height: 100vh;
     background-color: blueviolet;
 }
@@ -63,9 +63,11 @@
 }
 .carda{
     float: left;
+    margin: 20px 20px 20px 20px;
+    width: 45ch;
 }
 .cont{
-    margin: 15px 15p 15px 15px ;
+  
 }
 
 /* .rangeimage{
