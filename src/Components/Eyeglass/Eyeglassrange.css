@@ -22,12 +22,12 @@
     display: flex;
 }
 .seconddiva{
-    width: 20vw;
+    width: 10vw;
     height: 100vh;
     background-color: blueviolet;
 }
 .seconddivb{
-    width: 80vw;
+    width: 90vw;
     height: 100vh;
     background-color: chartreuse;
 }

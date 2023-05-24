@@ -192,5 +192,16 @@ let EyeglassApii = [
     },           
 
 ]
+let Eyeglassrangeapi = [
+    { 
+        id:'1',
+        name:'Vincent Chase Online',
+        image:'https://drive.google.com/uc?export=view?&id=1s4NLbj4jlui7ycxs3HW0RzliI47WvP9Z',
+        size:'Medium.Shine On',
+        amount:'1500'
+        
+    }
+]
+
 export default EyeglassApi;
-export {EyeglassApib,EyeglassApic,EyeglassApid,EyeglassApie,EyeglassApif,EyeglassApig,EyeglassApih,EyeglassApii}
+export {EyeglassApib,EyeglassApic,EyeglassApid,EyeglassApie,EyeglassApif,EyeglassApig,EyeglassApih,EyeglassApii,Eyeglassrangeapi}

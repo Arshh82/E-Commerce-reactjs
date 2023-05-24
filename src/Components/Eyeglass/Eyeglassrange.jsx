@@ -1,10 +1,12 @@
 import React from 'react'
 import './Eyeglassrange.css'
+import { Eyeglassrangeapi } from '../../Apijson/Eyeglasshome/EyeglassA'
+import EyeglassrangeCard from './EyeglassrangeCard'
 
 const Eyeglassrange = () => {
   return (
     <>
-    <div className='eyefirstdiveyegl'>
+    <div className='eyefirstdiveyegl '>
         Eyeglass
       </div>
       <div className='eyeseconddiv'>
@@ -12,6 +14,7 @@ const Eyeglassrange = () => {
 
         </div>
         <div className='seconddivb'>
+        <EyeglassrangeCard/>
 
         </div>
       </div>
