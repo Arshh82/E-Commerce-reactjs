@@ -1,18 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
-    
 }
-.body
-{
-
-}
-/* .eyeglassparentdiv{
-    width: 98vw;
-    margin-left: 1vw;
-    position: inherit;
-} */
 .eyefirstdiveyegl{
     margin-top: 10vh;
     width: auto;
@@ -22,6 +11,7 @@
 }
 .eyeseconddiv{
     display: flex;
+    /* background-color: rgb(102, 255, 235); */
 }
 .seconddiva{
     width: 12vw;
@@ -29,16 +19,16 @@
     background-color: blueviolet;
 }
 .seconddivb{
-    width: 90vw;
+    min-width: 90vw;
+    max-width: 90vw;
     height: 100vh;
+    float: right;
+   
     overflow-y:scroll;
-    /* scroll:hidden; */
-    scroll-behavior: smooth;  
     /* background-color: chartreuse; */
 }
 .eyesglassrangecard{
     float: left;
-    
     min-width: 26vw;
     max-width: 26vw;
     min-height: 10vh;
@@ -57,6 +47,7 @@
 }
 .cardd:hover{
     display:none;
+    transition: 1s;
 
 }
 .imgcarddd{
@@ -65,13 +56,10 @@
     /* background-color: brown; */
     overflow: hidden;
     padding: 0px 40px 40px 40px;
-    
-
 }
 .carddb{
     position: relative;
     width: 100%;
-    
 }
 
 .cardimage{
@@ -86,24 +74,11 @@
     float: left;
     margin: 15px 10px 12px 15px;
     width: 50ch;
-    border-width: 0.1px;
-    min-width: auto;
-    max-width: auto;
     min-height: 38ch;
     max-height: 38ch;
+    border-width: 0.1px;
+    /* background-color: blueviolet; */
 }
-.cont{
-  
+.cccard{
+    /* background-color: cornflowerblue; */
 }
-
-/* .rangeimage{
-    display: flex;
-    width: 26vw;
-    height: 28vh;
-    background-image: url(https://drive.google.com/uc?export=view?&id=1CIamopmGO0he35vgWuQEXs8c-sbcvh-t);
-    background-size:contain;
-}
-.rangeimage:hover{
-    background-image: url(https://drive.google.com/uc?export=view?&id=1s4NLbj4jlui7ycxs3HW0RzliI47WvP9Z);
-    background-size:contain;
-} */

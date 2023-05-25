@@ -6,16 +6,14 @@ import EyeglassrangeCard from './EyeglassrangeCard'
 const Eyeglassrange = () => {
   return (
     <>
-    <div className='eyefirstdiveyegl '>
+      <div className='eyefirstdiveyegl sticky-sm-top'>
         Eyeglass
       </div>
-      <div className='eyeseconddiv'>
-        <div className='seconddiva'>
-
+      <div className='eyeseconddiv '>
+        <div className='seconddiva  '>
         </div>
-        <div className='seconddivb'>
-        <EyeglassrangeCard/>
-
+        <div className='seconddivb '>
+          <EyeglassrangeCard />
         </div>
       </div>
       </>
