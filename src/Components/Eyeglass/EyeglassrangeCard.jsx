@@ -5,30 +5,8 @@ const EyeglassrangeCard = () => {
 
     
   return (
-    // <div >
-    // {Eyeglassrangeapi.map( (cc)=> {
-    //     return(
-    //    <div className='eyesglassrangecard'>
-    //    <div className='cardimage'>
-    //    <img src={cc.imag} alt='no_img' className=' imagen  w-100 h-50' />
-    //    <img src={cc.imageho} alt='no_img' className='imagehov  w-100 h-50' />
-    //    </div>
-    //    {/* onMouseEnter={ ()=>{
-    //     return(
-    //         <img src={cc.imag} alt='no_img' className=' d-flex w-100'/>
-    //             )
-    //         }        
-       
-    // }/ */}
-       
-    //    <p>{cc.name}</p>
-    //    <p>Size {cc.size}</p>
-    //    <p>Rs.{cc.amount}</p>
-    //    </div>
-    //    )})}
-    //  </div>
     <>
-      {Eyeglassrangeapi.map((cc) => {
+        {Eyeglassrangeapi.map((cc) => {
         return (
           <section style={{ backgroundColor: '#eee;' }}>
             <div class="">
@@ -49,14 +27,14 @@ const EyeglassrangeCard = () => {
                     </div>
                     <div class="card-body">
                       <div class="text-start">
-                        <h5 class="card-title">{cc.name}</h5>
-                        <h6 class="text-info mb-2">Size {cc.size}</h6>
-                        <h6>Rs. {cc.amount} <span className='text-muted'>(+tax)</span></h6>
+                        <h5 class="card-title mt-2">{cc.name}</h5>
+                        <h6 class="text-muted mb-2">Size {cc.size}</h6>
+                        <h6 className='mb-2'>Rs. {cc.amount} <span className='text-muted'>(+tax)</span></h6>
                       </div>
                       <div>
-                        <div class="d-flex justify-content-center">
+                        {/* <div class="d-flex justify-content-center">
                           
-                        </div>
+                        </div> */}    
                       </div>
                     </div>
                   </div>

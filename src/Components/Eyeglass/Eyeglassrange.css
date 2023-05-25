@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    
+    
 }
 .body
 {
@@ -30,11 +32,13 @@
     width: 90vw;
     height: 100vh;
     overflow-y:scroll;
-    scroll:hidden;
+    /* scroll:hidden; */
+    scroll-behavior: smooth;  
     /* background-color: chartreuse; */
 }
 .eyesglassrangecard{
     float: left;
+    
     min-width: 26vw;
     max-width: 26vw;
     min-height: 10vh;
