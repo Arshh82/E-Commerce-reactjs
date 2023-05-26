@@ -33,10 +33,10 @@ const EyeglassrangeCard = () => {
             reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
             deleniti rem!
           </p>
-          {
+          {/* {
           const {id} = useParams();
           console.log("EyeglassrangeCard.js ~ line 12 ~ EyeglassrangeCard ~ id",id)
-          }
+          } */}
           <p>
          
             
