@@ -73,7 +73,7 @@ const EyeglassrangeCard = () => {
                         <h6 className='mb-2'>Rs. {cc.amount} <span className='text-muted'>(+tax)</span></h6>
                         <Button variant="primary" onClick={() => setShow(true) }>
                         {cc.id}
-      </Button>
+                       </Button>
                       </div>
                       <div>
                       </div>

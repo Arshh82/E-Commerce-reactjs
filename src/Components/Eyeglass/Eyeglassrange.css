@@ -39,7 +39,6 @@
 }
 .imagehov{
     position: relative;
-    display: non;
 }
 .cardd{
     position: relative;
@@ -53,9 +52,9 @@
 .imgcarddd{
     width: auto;
     height: 22.5vh;
-    /* background-color: brown; */
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
-    padding: 0px 40px 40px 40px;
+    padding: 10px 40px 40px 40px;
 }
 .carddb{
     position: relative;
