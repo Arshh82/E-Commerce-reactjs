@@ -25,7 +25,7 @@ function App() {
         <Route path='/contactlenses' element={<Contactlenses />}></Route>
         <Route path='/sunglass' element={<Sunglass />}></Route>
         <Route path='/storelocator' element={<Storelocator />}></Route>
-        <Route path='/test' element={<Test />}></Route>
+        <Route path='/test/:id' element={<Test />}></Route>
         <Route path='/caroselProducta' element={<CaroselProducta />}></Route>
       </Routes> 
     </>
