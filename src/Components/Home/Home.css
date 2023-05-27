@@ -122,8 +122,7 @@
     /* background-color: rgb(247, 0, 95); */
     height: 43vh;
     width: 80vw;
-    justify-content: center;
-    align-items: center;
+   
     overflow: hidden;
 }
 
@@ -133,18 +132,23 @@
 }
 
 .cardA {
-    min-width: 220px;
-    max-width: 220px;
+    min-width: 260px;
+    max-width: 260px;
     min-height: 280px;
     max-height: 280px;
-    margin: 25px 25px 25px 20px;
+    margin: 20px 20px 15px 10px;
     /* background-color: rgb(212, 212, 212); */
 }
 
-.cardAimg {
-    width: 220px;
-    height: 140px;
+.cardAbtn{
+    width: 7.5vw;
+    height: 4.5vh;
 }
+.cardAimg {
+    width: 100%;
+    height: 100%;
+}
+
 
 .procontainer {
     scroll-behavior: smooth;
@@ -213,15 +217,15 @@
 }
 
 .sixthdiv {
-    height: 20vh;
-    background-color: #fef1c7;
+    height: 15vh;
+    background-color: #fae5a2;
     border-radius: 30px 30px 0px 0px;
 
 }
 
 .sixthdivtext {
     font-family: 'Jua', sans-serif;
-    font-size: 2.5ch;
+    font-size: 2.3ch;
     font-weight: 100;
     position: relative;
     margin-top: 10px;
@@ -349,43 +353,6 @@
 
 }
 
-/* .footer {
-    width: auto;
-    height: 15vh;
-    background-color: #E0E2E5;
-
-}
-
-.image-box {
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .footertexta {
-    font-size: xx-large;
-    font-weight: 500;
-    font-family: 'Pacifico', cursive;
-
-}
-
-.footertextb {
-    font-family: 'Zeyada', cursive;
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.footerlogo {
-
-    margin-top: -18px;
-    position: relative;
-
-} */
-
-/* .logoo {
-
-    width: 3.5ch;
-    margin-left: 18px;
-} */
 
 /* ----------------------------------------------------------- */
 @media (max-width: 767px) {

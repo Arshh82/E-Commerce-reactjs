@@ -143,22 +143,6 @@ const Home = () => {
 
             </div>
           </center>
-          {/* <div className='footer sm'>
-            <center>
-              <p className='footertexta'>Created By <span className='footertextb'>Arshil</span></p>
-              <div className='footerlogo'>
-                <a href='https://github.com/Arshh82' target='#'>
-                  <img src={Logo1} className='logoo' alt='null' />
-                </a>
-                <a href='https://www.linkedin.com/in/arshil-baig-a387b0188/' target='#'>
-                  <img src={Logo2} className='logoo' alt='null' />
-                </a>
-                <a href='https://app.netlify.com/teams/arshh82/overview' target='#'>
-                  <img src={Logo3} className='logoo' alt='null' />
-                </a>
-              </div>
-            </center>
-          </div> */}
           <Footer/>
         </div>
       </div>

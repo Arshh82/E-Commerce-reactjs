@@ -22,14 +22,13 @@ const responsive = {
         items: 1
     }
 }
-let a = <EyeglassApi/>
 const Eyeglassslider = (cc) => {
     return (
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -51,8 +50,8 @@ const Eyeglasssliderb = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -75,8 +74,8 @@ const Eyeglasssliderc = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -99,8 +98,8 @@ const Eyeglasssliderd = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -123,8 +122,8 @@ const Eyeglassslidere = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -147,8 +146,8 @@ const Eyeglasssliderf = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -171,8 +170,8 @@ const Eyeglasssliderg = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -195,8 +194,8 @@ const Eyeglasssliderh = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
@@ -219,8 +218,8 @@ const Eyeglassslideri = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={false}
-                autoPlaySpeed={10500}
+                autoPlay={true}
+                autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"
                 transitionDuration={1}
