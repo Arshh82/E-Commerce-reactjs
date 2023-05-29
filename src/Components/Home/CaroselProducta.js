@@ -36,8 +36,8 @@ import Card from 'react-bootstrap/Card';
                 containerClass="carousel-container">
                {ProductA.map((cc) => {
                    return (
-                 <div>
-                 <Card className='cardA' style={{border:'none'}}>
+                 <div key={cc.id}>
+                 <Card className='cardA' style={{border:'none'}} >
                    <Card.Img variant="top" className='cardAimg  mb-2' src={cc.image} />
                    <Card.Body>
                    <center >

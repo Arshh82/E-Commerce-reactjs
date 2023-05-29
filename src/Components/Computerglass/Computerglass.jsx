@@ -54,7 +54,7 @@ const Computerglass = () => {
 
 
           <section style={{ backgroundColor: '#eee;' }}>
-            <div class="">
+            <div class="" key={cc.id}>
               <div class="coloumn justify-content-start ">
                 <div class="col-md-8 col-lg-6 col-xl-3 carda ">
                   <div class="card text-black  cccard">

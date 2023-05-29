@@ -52,7 +52,7 @@ const Sunglass = () => {
            
 
 
-          <section style={{ backgroundColor: '#eee;' }}>
+          <section style={{ backgroundColor: "white" }}>
             <div class="">
               <div class="coloumn justify-content-start ">
                 <div class="col-md-8 col-lg-6 col-xl-3 carda ">

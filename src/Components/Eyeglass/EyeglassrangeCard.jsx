@@ -24,7 +24,7 @@ const EyeglassrangeCard = () => {
     <Modal
         showw={showw}
         onHide={() => setShoww(false)}
-        dialogClassName="modal-100w"
+        dialogclassName="modal-100w"
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
@@ -47,36 +47,31 @@ const EyeglassrangeCard = () => {
       </Modal>
         {data.map((v) => {
         return (
-          <section style={{ backgroundColor: '#eee;' }}>
-            <div class="">
-              <div class="coloumn justify-content-start ">
-                <div class="col-md-8 col-lg-6 col-xl-3 carda ">
-                  <div class="card text-black  cccard">
-                  <div className='imgcarddd'>
+          <Link to={`/singleproduct/${v.id}`}>
+          <section style={{ backgroundColor: "white" }} key={v.id}>
+            <div className="" >
+              <div className="coloumn justify-content-start ">
+                <div className="col-md-8 col-lg-6 col-xl-3 carda ">
+                  <div className="card text-black  cccard">
+                  <div className='imgcarddd' key={v.id}>
                     <img
+                       
                       src={v.image}
-                      class="cardd -img-top"
+                      className="cardd -img-top"
                       alt="Glass_image"
                     />
                     <img
                       src={v.imagehov}
-                      class="carddb -img-top"
+                      className="carddb -img-top"
                       alt="Glass_image"
                     />
                     </div>
-                    <div class="card-body">
-                      <div class="text-start">
-                        <h5 class="card-title mt-2">{v.name}</h5>
-                        <h6 class="text-muted mb-2">Size {v.size}</h6>
+                    <div className="card-body">
+                      <div className="text-start">
+                        <h5 className="card-title mt-2">{v.name}</h5>
+                        <h6 className="text-muted mb-2">Size {v.size}</h6>
                         <h6 className='mb-2'>Rs. {v.amount} <span className='text-muted'>(+tax)</span></h6>
-                        <Link to={`/singleproduct/${v.id}`}>
-                        <Button variant="primary">
-                        {v.id}
-                       </Button>
-                       </Link>
-                     
-                        {/* onClick={() => setShow(true) } */}
-                      </div>
+                       </div>
                       <div>
                       </div>
                     </div>
@@ -85,7 +80,7 @@ const EyeglassrangeCard = () => {
               </div>
             </div>
           </section>
-        )
+</Link>        )
       })}
             </>
   )

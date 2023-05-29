@@ -35,7 +35,7 @@ const Eyeglassslider = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApi.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -58,7 +58,7 @@ const Eyeglasssliderb = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApib.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -82,7 +82,7 @@ const Eyeglasssliderc = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApic.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -106,7 +106,7 @@ const Eyeglasssliderd = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApid.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -130,7 +130,7 @@ const Eyeglassslidere = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApie.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -154,7 +154,7 @@ const Eyeglasssliderf = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApif.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -178,7 +178,7 @@ const Eyeglasssliderg = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApig.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -202,7 +202,7 @@ const Eyeglasssliderh = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApih.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>
@@ -226,7 +226,7 @@ const Eyeglassslideri = (cc) => {
                 containerClass="carousel-container">
                 {EyeglassApii.map((cc) => {
                     return (
-                        <div className='EyeglassslidercardA'>
+                        <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />
                             <br />
                         </div>

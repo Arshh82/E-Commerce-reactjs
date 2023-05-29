@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.productdetailspage{
+    width: 100vw;
+    height: 85vh;
+    background-color: aqua;
+    margin-top: 5vw;
+    display: flex;
+}
+.productdetail{
+    font-size: 3vw;
+}
+.img-a
+{
+    width: 42vw;
+    height: auto;
+    border-color: rgb(247, 0, 0);
+    border-width: 190px;
+    margin: 3px 0px 3px 10vw;
+}
