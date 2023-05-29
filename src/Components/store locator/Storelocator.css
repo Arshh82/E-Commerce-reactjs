@@ -1,0 +1,13 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.mapa{
+    width: 100vw;
+    margin-top: 5%;
+}
+.text{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}

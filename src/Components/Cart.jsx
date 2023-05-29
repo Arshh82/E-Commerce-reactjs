@@ -1,7 +1,7 @@
-// import React, { useEffect, useState } from 'react'
-// import { json, useParams } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { json, useParams } from 'react-router-dom'
 
-// const Cart = () => {
+const Cart = () => {
 //   const [product,setProduct] = useState([]);
 //   // const [loading, setLoading] = useState(true);
 
@@ -13,22 +13,22 @@
 //     console.log(match);
 //     alert('hello')
 //   },[]);
-//   return (
-//     <div>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     <p>Cart</p>
-//     </div>
-//   )
-// }
+  return (
+    <div>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    <p>Cart</p>
+    </div>
+  )
+}
 
-// export default Cart
+export default Cart

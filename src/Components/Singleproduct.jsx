@@ -44,10 +44,11 @@ function Singleproduct({ match }) {
                     </div>
                     <div className='productdetail'>
                       {/* <p>{v.id}</p> */}
-                      <p>Name {v.name}</p>
-                      <p>Size : {v.size}</p>
-                      <p>Rs. {v.amount}</p><br/>
-                      <button className='btn btn-primary'>Buy Now</button>
+                      <p className='detailname  mb-0  mt-5'>Name:{v.name}</p>
+                      <p className='detailsize mb-2'>Size: {v.size}</p>
+                      <p className='detailamount mb-4'>Rs. {v.amount}/-</p>
+                      <button className='detailbtn mb-4'>Buy Now</button>
+                      <button className='detailbtnb'>Add to Cart</button>
                     </div>
                 </div>
                   : <p></p>

@@ -7,7 +7,7 @@ const Footer = () => {
     let Logo3 = new URL("/public/images/social logo/netlify logo.png", import.meta.url)
   return (
     <>
-        <div className='footer sm '>
+        <div className='footer sm  bottom-fixed'>
             <center>
               <p className='footertexta'>Created By <span className='footertextb'>Arshil</span></p>
               <div className='footerlogo'>

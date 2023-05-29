@@ -5,18 +5,77 @@
 .productdetailspage{
     width: 100vw;
     height: 85vh;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 5vw;
     display: flex;
+    
 }
 .productdetail{
-    font-size: 3vw;
+    /* background-color: blueviolet; */
+    margin-left: 10vw;
+    width: 30vw;
 }
+
 .img-a
 {
     width: 42vw;
     height: auto;
-    border-color: rgb(247, 0, 0);
-    border-width: 190px;
+    border-style:ridge;
+    border-color: rgb(170, 170, 170);
+    border-width: 0.2px;
     margin: 3px 0px 3px 10vw;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    /* background-color: blue; */
+}
+.img-a:hover{
+    border-color: rgb(30, 135, 255);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.detailname{
+    font-family: 'Kalam', cursive;
+    font-weight: 550;
+    font-size: 1.8rem;
+
+}
+.detailsize{
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(92, 90, 90);
+}
+.detailamount{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 550;
+    color: rgb(3, 211, 183);
+    font-size: 2.1rem;
+}
+.detailbtn{
+    width: 100%;
+    background-color: rgb(129, 129, 129);
+    color: aliceblue;
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 2.5rem;
+    border: none;
+    border-radius: .5rem;
+}
+.detailbtn:hover{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.detailbtnb{
+    width: 100%;
+    background-color: rgb(241, 145, 0);
+    color: rgb(255, 253, 240);
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 2.5rem;
+    border: none;
+    border-radius: .5rem;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.detailbtnb:hover{
+    
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
