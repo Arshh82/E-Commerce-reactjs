@@ -80,7 +80,8 @@ const EyeglassrangeCard = () => {
               </div>
             </div>
           </section>
-</Link>        )
+       </Link>
+        )
       })}
             </>
   )
