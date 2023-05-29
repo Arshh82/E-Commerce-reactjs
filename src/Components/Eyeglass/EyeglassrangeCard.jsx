@@ -1,20 +1,29 @@
 import React from 'react'
-import { useState } from 'react';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 import { Eyeglassrangeapi } from '../../Apijson/Eyeglasshome/EyeglassA'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const EyeglassrangeCard = () => {
-  const [show, setShow] = useState(false);
-  
+  const [showw, setShoww] = useState(false);
+  let [data, updatedata] = useState([]);
+  let [product, updateproduct] = useState({ id:'', name: '', image: '', imagehov: '', size: '',amount:'' });
+  useEffect(() => {
+    show();
+  });
+  async function show() {
+    var res = await axios.get("https://arshil-eyewear.onrender.com/Eyeglassrangeapi/");
+    updatedata(res.data);
+  }
   return (
-
     <>
     <Modal
-        show={show}
-        onHide={() => setShow(false)}
+        showw={showw}
+        onHide={() => setShoww(false)}
         dialogClassName="modal-100w"
         aria-labelledby="example-custom-modal-styling-title"
       >
@@ -33,22 +42,11 @@ const EyeglassrangeCard = () => {
             reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
             deleniti rem!
           </p>
-          {/* {
-          const {id} = useParams();
-          console.log("EyeglassrangeCard.js ~ line 12 ~ EyeglassrangeCard ~ id",id)
-          } */}
-          <p>
-         
-            
-          </p>
           
         </Modal.Body>
       </Modal>
-        {Eyeglassrangeapi.map((cc) => {
+        {data.map((v) => {
         return (
-           
-
-
           <section style={{ backgroundColor: '#eee;' }}>
             <div class="">
               <div class="coloumn justify-content-start ">
@@ -56,24 +54,27 @@ const EyeglassrangeCard = () => {
                   <div class="card text-black  cccard">
                   <div className='imgcarddd'>
                     <img
-                      src={cc.image}
+                      src={v.image}
                       class="cardd -img-top"
                       alt="Glass_image"
                     />
                     <img
-                      src={cc.imagehov}
+                      src={v.imagehov}
                       class="carddb -img-top"
                       alt="Glass_image"
                     />
                     </div>
                     <div class="card-body">
                       <div class="text-start">
-                        <h5 class="card-title mt-2">{cc.name}</h5>
-                        <h6 class="text-muted mb-2">Size {cc.size}</h6>
-                        <h6 className='mb-2'>Rs. {cc.amount} <span className='text-muted'>(+tax)</span></h6>
+                        <h5 class="card-title mt-2">{v.name}</h5>
+                        <h6 class="text-muted mb-2">Size {v.size}</h6>
+                        <h6 className='mb-2'>Rs. {v.amount} <span className='text-muted'>(+tax)</span></h6>
+                        <Link to={`/singleproduct/${v.id}`}>
                         <Button variant="primary">
-                        {cc.id}
+                        {v.id}
                        </Button>
+                       </Link>
+                     
                         {/* onClick={() => setShow(true) } */}
                       </div>
                       <div>

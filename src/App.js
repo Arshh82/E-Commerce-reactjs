@@ -12,9 +12,13 @@ import Test from './Components/Test';
 import CaroselProducta from './Components/Home/CaroselProducta';
 import Eyeglass from './Components/Eyeglass/Eyeglass';
 import Eyeglassrange from './Components/Eyeglass/Eyeglassrange';
+import Singleproduct from './Components/Singleproduct';
+import Cart from './Components/Cart';
+import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
     <>
+    <BrowserRouter>
     <Navbarr/>
       <Routes>
         <Route path='/' element={<Home />}></Route>
@@ -25,9 +29,12 @@ function App() {
         <Route path='/contactlenses' element={<Contactlenses />}></Route>
         <Route path='/sunglass' element={<Sunglass />}></Route>
         <Route path='/storelocator' element={<Storelocator />}></Route>
-        <Route path='/test/:id' element={<Test />}></Route>
+        <Route path='/test' element={<Test />}></Route>
         <Route path='/caroselProducta' element={<CaroselProducta />}></Route>
+        <Route path='/singleproduct/:id' element={<Singleproduct />}></Route>
+        <Route path='/cart' element={<Cart />}></Route>
       </Routes> 
+      </BrowserRouter>
     </>
   );
 
