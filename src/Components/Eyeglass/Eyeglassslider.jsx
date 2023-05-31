@@ -33,7 +33,7 @@ const Eyeglassslider = (cc) => {
                 customTransition="all .5"
                 transitionDuration={1}
                 containerClass="carousel-container">
-                {EyeglassApi.map((cc) => {
+                {EyeglassApi.map((cc) => {  
                     return (
                         <div className='EyeglassslidercardA' key={cc.id}>
                             <img src={cc.image} alt='no_img' className='Eyeglasssliderimg' /> <br />

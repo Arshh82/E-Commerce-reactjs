@@ -1,44 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { Eyeglassrangeapi } from '../Apijson/Eyeglasshome/EyeglassA'
-import { useParams } from 'react-router-dom'
-import axios from 'axios'
-import { Dispatch } from 'react'
-const Test = () => {
-  // const [glass,setGlass]=useState({});
+import React from 'react'
 
-  // const fetchGlass = async (id) => {
-  //    const response = await Eyeglassrangeapi.retrive(id);
-  //   const {name,size,amount} = response;
-  //   setGlass({
-  //     name,
-  //     size,
-  //     amount,
-  //   });
-  //   };
-  //   useEffect(() => {
-  //     const id = window.location.pathname.split("/");
-  //     fetchGlass(id[2]);
-  //   },[])
-
-
-  // const API = "http://localhost:3000/test/";
- 
-
-  //  const {id} = useParams();
-
-  // const getSingleProduct = async (url) => {
-  //   Dispatch({ type : 'SET_SINGLE_LOADING'});
-  //   try{
-  //     const res = await axios.get(url);
-  //     const singleProduct = await res.data;
-  //     Dispatch({type: "SET_SINGLE_PRODUCT", payload:"singleProduct"});
-  //   } catch (error){
-  //     Dispatch({type: "SET_SINGLE_ERROR"});
-  //   }
-  // };
-  // useEffect(() => {
-  //   getSingleProduct(`${API}${id}`);    
-  // },[])
+import ReactLoading from 'react-loading';
+const Test = ({ bubbles, color }) => {
 
   return (
     <>
@@ -52,10 +15,9 @@ const Test = () => {
     <h2>Test</h2>
     <h2>Test</h2>
     <h2>Test</h2>
-    <h2>Test</h2>
-    <h2>Test</h2>
-    <h2>Test</h2>
-    <h2>Test </h2>
+    <ReactLoading type={'bubbles'} color={"#9c3cff"} height={867} width={575} />
+
+
     </>
   )
 }

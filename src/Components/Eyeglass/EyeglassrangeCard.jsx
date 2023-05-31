@@ -2,10 +2,11 @@ import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Loading from '../../Loading'
 
 
 const EyeglassrangeCard = () => {
-  const [showw, setShoww] = useState(false);
+  const [loading,setLoading]= useState(false)
   let [data, updatedata] = useState([]);
   let [product, updateproduct] = useState({ id:'', name: '', image: '', imagehov: '', size: '',amount:'' });
   useEffect(() => {
@@ -14,10 +15,11 @@ const EyeglassrangeCard = () => {
   async function show() {
     var res = await axios.get("https://arshil-eyewear.onrender.com/Eyeglassrangeapi/");
     updatedata(res.data);
+    setLoading(true)
   }
   return (
     <>
-      {data.map((v) => {
+      {loading?data.map((v) => {
         return (
           <Link to={`/singleproduct/${v.id}`}>
           <section style={{ backgroundColor: "white" }} key={v.id}>
@@ -43,6 +45,7 @@ const EyeglassrangeCard = () => {
                         <h5 className="card-title mt-2">{v.name}</h5>
                         <h6 className="text-muted mb-2">Size {v.size}</h6>
                         <h6 className='mb-2'>Rs.{v.amount} <span className='text-muted'>(+GST)</span></h6>
+                        
                        </div>
                       <div>
                       </div>
@@ -54,7 +57,9 @@ const EyeglassrangeCard = () => {
           </section>
        </Link>
         )
-      })}
+      }) :<div className='loadingg'>
+          <Loading/>
+          </div>}
             </>
   )
 }
