@@ -17,6 +17,8 @@ const Eyeglassrange = () => {
         <button>Rs.2500 - 3500/-</button>
         <button>Under 5000</button>
         <button>Under 10000</button>
+        <button>Under 10000</button>
+        <button>Under 10000</button>
         </div>
         <div className='seconddivb '>
           <EyeglassrangeCard />
