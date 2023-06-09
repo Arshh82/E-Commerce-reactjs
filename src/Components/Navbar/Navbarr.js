@@ -9,9 +9,12 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { FiShoppingCart,FiUser } from 'react-icons/fi';
 import { NavLink } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+
 
 const Navbarr = () => {
   let fi12 = new URL("/public/images/Brandlogo/metrix logo-.PNG", import.meta.url)
+  const products = useSelector((state) => state.cart);
   return (
     <>
     <div>
@@ -42,7 +45,7 @@ const Navbarr = () => {
                   className="me-2"
                   aria-label="Search"
                 />
-                <Link to='/cart'><FiShoppingCart className='cartico'/> </Link>
+                <Link to='/cart'><FiShoppingCart className='cartico'/> {products.length}</Link>
                 <Link><FiUser className='cartico'/></Link>
               </Form>
             </div>

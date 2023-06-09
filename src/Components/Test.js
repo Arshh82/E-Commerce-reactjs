@@ -1,7 +1,8 @@
 import React from 'react'
 
-import ReactLoading from 'react-loading';
-const Test = ({ bubbles, color }) => {
+
+const Test = () => {
+
 
   return (
     <>
@@ -12,10 +13,7 @@ const Test = ({ bubbles, color }) => {
     <h2>Test</h2>
     <h2>Test</h2>
     <h2>Test</h2>
-    <h2>Test</h2>
-    <h2>Test</h2>
-    <h2>Test</h2>
-    <ReactLoading type={'bubbles'} color={"#9c3cff"} height={867} width={575} />
+    
 
 
     </>

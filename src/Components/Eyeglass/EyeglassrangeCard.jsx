@@ -3,23 +3,42 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Loading from '../../Loading'
+import { STATUSES } from '../../Reducers/productSlice';
+import { fetchProducts } from '../../Reducers/productSlice';
+import { add } from '../../Reducers/cartSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 
-const EyeglassrangeCard = () => {
-  const [loading,setLoading]= useState(false)
-  let [data, updatedata] = useState([]);
-  let [product, updateproduct] = useState({ id:'', name: '', image: '', imagehov: '', size: '',amount:'' });
+const EyeglassrangeCard = () => { const dispatch = useDispatch();
+  const { data: products, status } = useSelector((state) => state.product);
+  const [loading,setLoading]= useState(true)
+  // const [products, setProducts] = useState([]);
+
   useEffect(() => {
-    show();
-  });
-  async function show() {
-    var res = await axios.get("https://arshil-eyewear.onrender.com/Eyeglassrangeapi/");
-    updatedata(res.data);
-    setLoading(true)
+      dispatch(fetchProducts());
+      // const fetchProducts = async () => {
+      //     const res = await fetch('https://fakestoreapi.com/products');
+      //     const data = await res.json();
+      //     console.log(data);
+      //     setProducts(data);
+      // };
+      // fetchProducts();
+  }, []);
+
+  const handleAdd = (product) => {
+      dispatch(add(product));
+  };
+
+  if (status === STATUSES.LOADING) {
+      return <h2>Loading....</h2>;
+  }
+
+  if (status === STATUSES.ERROR) {
+      return <h2>Something went wrong!</h2>;
   }
   return (
     <>
-      {loading?data.map((v) => {
+      {products.map((v) => {
         return (
           <Link to={`/singleproduct/${v.id}`}>
           <section style={{ backgroundColor: "white" }} key={v.id}>
@@ -57,9 +76,7 @@ const EyeglassrangeCard = () => {
           </section>
        </Link>
         )
-      }) :<div className='loadingg'>
-          <Loading/>
-          </div>}
+      }) }
             </>
   )
 }
