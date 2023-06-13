@@ -1,14 +1,14 @@
 const { createSlice } = require('@reduxjs/toolkit');
 
-const initialState = {
-    carts:[],
-    quantity:0,
-}
+// const initialState = {
+//     carts:[],
+//     quantity:0,
+// }
 
 
 const cartSlice = createSlice({
     name: 'cart',
-    initialState,
+    initialState : [],
     reducers: {
         add(state, action) {
             // let find = state.product.findIndex((product) => product.Id === action.payload.id);
@@ -18,12 +18,12 @@ const cartSlice = createSlice({
             // else{
                 
             // }
-            const find = state.carts.findIndex(item=>item.id===action.payload.id)
+            const find = state.findIndex(item=>item.id===action.payload.id)
             if(find>=0){
-                state.carts[find].quantity +=1
+                
             }else{
-                const tempvar = {...action.payload, quantity:1}
-                state.carts.push(action.payload);
+                // const tempvar = {...action.payload, quantity:3}
+                state.push(action.payload);
             }
             
         },

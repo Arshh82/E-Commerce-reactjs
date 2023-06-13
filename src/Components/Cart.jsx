@@ -6,10 +6,11 @@ import { remove } from '../Reducers/cartSlice';
 const Cart = () => {
   const dispatch = useDispatch();
     const products = useSelector((state) => state.cart);
+    
     const handleRemove = (productId) => {
         dispatch(remove(productId));
     };
-    console.log(products)
+    
     
 const [amount,setAmount]= useState(1)
   return (

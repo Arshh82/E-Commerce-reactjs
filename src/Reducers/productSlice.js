@@ -40,7 +40,7 @@ export default productSlice.reducer;
 
 // Thunks
 export const fetchProducts = createAsyncThunk('products/fetch', async () => {
-    const res = await fetch('https://arshil-eyewear.onrender.com/Eyeglassrangeapi');
+    const res = await fetch('https://jsontestapi-production.up.railway.app/Eyeglassrangeapi');
     const data = await res.json();
     return data;
 });

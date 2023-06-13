@@ -25,9 +25,9 @@ const EyeglassrangeCard = () => { const dispatch = useDispatch();
       // fetchProducts();
   }, []);
 
-  const handleAdd = (product) => {
-      dispatch(add(product));
-  };
+  // const handleAdd = (product) => {
+  //     dispatch(add(product));
+  // };
 
   if (status === STATUSES.LOADING) {
       return <h2>Loading....</h2>;
@@ -40,8 +40,8 @@ const EyeglassrangeCard = () => { const dispatch = useDispatch();
     <>
       {products.map((v) => {
         return (
-          <Link to={`/singleproduct/${v.id}`}>
-          <section style={{ backgroundColor: "white" }} key={v.id}>
+          <Link to={`/singleproduct/${v.id}`} key={v.id}>
+          <section style={{ backgroundColor: "white" }} >
             <div className="" >
               <div className="coloumn justify-content-start ">
                 <div className="col-md-8 col-lg-6 col-xl-3 carda ">

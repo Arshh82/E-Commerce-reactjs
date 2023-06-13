@@ -13,7 +13,7 @@ import { add } from '../Reducers/cartSlice';
 const API = "https://arshil-eyewear.onrender.com/Eyeglassrangeapi/"
 function Singleproduct() {
   const dispatch = useDispatch();
-  const { data: produc, status } = useSelector((state) => state.product);
+  const { data: products, status } = useSelector((state) => state.product);
   
   const [loading,setLoading] = useState(true);
   // const [product, setProduct] = useState([
@@ -43,7 +43,7 @@ function Singleproduct() {
   return (
     <>
       <div>
-        { products.map((v) => {
+        { products?.map((v) => {
           return (
             <div key={v.id} >
               {v.id === id ?
@@ -56,11 +56,12 @@ function Singleproduct() {
                     <p className='detailname  mb-0  mt-5'>Name:{v.name}</p>
                     <p className='detailsize mb-2'>Size: {v.size}</p>
                     <p className='detailamount mb-2'>Rs. {v.amount}/-</p>
-                    <h3 className='mb-2'>Availability:{v.stockqwantity >= 1 ? <h4 className='text-success'>In stock</h4> : <h4 className='text-danger'>Out of stock</h4>}</h3>
-                    <h3 className='mb-4'>{v.stockqwantity <= 10 ? <h4 className='text-danger'>Hurry Now Only {v.stockqwantity} Stocks Are Left only !</h4> : <h4 className='text-danger'></h4>}</h3>
+                    <h3 className='mb-2'>Availability:{v.stockqwantity >= 1 ? <p className='text-success'>In stock</p> : <p className='text-danger'>Out of stock</p>}</h3>
+                    <h3 className='mb-4'>{v.stockqwantity <= 10 ? <p className='text-danger'>Hurry Now Only {v.stockqwantity} Stocks Are Left only !</p> : <h4 className='text-danger'></h4>}</h3>
                     <button className='detailbtn mb-4'>Buy Now</button>
                     
                     <button className='detailbtnb' onClick={() => handleAdd(v)} >Add to Cart</button>
+                    {console.log(v)}
                     
                   </div>
                 </div>
