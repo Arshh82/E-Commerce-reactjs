@@ -2,12 +2,18 @@ import React from 'react'
 import './Eyeglassrange.css'
 import { Eyeglassrangeapi } from '../../Apijson/Eyeglasshome/EyeglassA'
 import EyeglassrangeCard from './EyeglassrangeCard'
+import { useSelector } from 'react-redux'
 
 const Eyeglassrange = () => {
+  const product = useSelector((state) => state.product)
   return (
     <>
-      <div className='eyefirstdiveyegl sticky-top'>
-        
+      <div className='eyefirstdiveyegl'>
+      </div>
+      <div>
+      <center>
+        <h4 className='mt-3'>Showing Top {product.data.length} Glasses  </h4>
+        </center>
       </div>
       <div className='eyeseconddiv '>
         <div className='seconddiva  '>

@@ -1,0 +1,28 @@
+.cartt{
+    width: 99%;
+    height: 80vh;
+    margin: 8px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 8px;
+}
+.cartitems{
+    width: 55vw;
+    height: 100%;
+    background-color: aqua;
+}
+.cartcalculation{
+    width: 25vw;
+    height: 100%;
+    background-color: rgb(61, 199, 6);
+}
+.productimage{
+    width: auto;
+    height: 20vh;
+}
+.cartCard{
+    width: 100%;
+    height: auto;
+}
