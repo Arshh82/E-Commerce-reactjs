@@ -15,6 +15,7 @@ import Eyeglassrange from './Components/Eyeglass/Eyeglassrange';
 import Singleproduct from './Components/Singleproduct';
 import Cart from './Components/Cart';
 import { BrowserRouter } from 'react-router-dom';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
         <Route path='/singleproduct/:id' element={<Singleproduct />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
       </Routes> 
+      <Footer/>
       </BrowserRouter>
     </>
   );

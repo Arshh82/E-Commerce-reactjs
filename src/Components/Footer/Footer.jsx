@@ -9,6 +9,7 @@ const Footer = () => {
     <>
         <div className='footer sm  bottom-fixed'>
             <center>
+            <div className='abv'>
               <p className='footertexta'>Created By <span className='footertextb'>Arshil</span></p>
               <div className='footerlogo'>
                 <a href='https://github.com/Arshh82' target='#'>
@@ -20,6 +21,7 @@ const Footer = () => {
                 <a href='https://app.netlify.com/teams/arshh82/overview' target='#'>
                   <img src={Logo3} className='logoo' alt='null' />
                 </a>
+              </div>
               </div>
             </center>
           </div>

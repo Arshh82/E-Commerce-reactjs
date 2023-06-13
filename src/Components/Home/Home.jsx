@@ -1,8 +1,10 @@
 import React from 'react'
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
+import { Carousel } from 'react-responsive-carousel';
 import './Home.css'
 import CaroselProducta from './CaroselProducta';
 import Footer from '../Footer/Footer'
+import Homepageslider from './Homepageslider';
 
 const Home = () => {
   let fi1 = new URL("/public/images/HomeCarosel/cimg (1).jpg", import.meta.url)
@@ -22,9 +24,8 @@ const Home = () => {
 
   return (
     <>
-      <div className='pcontainer'>
-        <div className='homecontainer'>
-          <div className='firstdiv'>
+    <div>
+    <div className='firstdiv'>
             <div className='imgdiv'>
               <div className='imageparent'><img src={fi6} alt='no-img' className='imgeyecontrol' /></div>
               <div><center className='headname'><p>Eyeglasses</p></center></div>
@@ -55,71 +56,37 @@ const Home = () => {
               <div><center className='headname'><p>Sunglasses</p></center></div>
             </div>
           </div>
-          <div className='slidera'>
-            <Carousel className='carocontrole'>
-              <Carousel.Item>
-                <img
-                  className="d-flex w-100"
-                  src={fi1}
-                  alt="First slide"
-                />
-                <Carousel.Caption>
-                  <h3>New Upcoming  Summer Sale </h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-flex w-100"
-                  src={fi2}
-                  alt="Second slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-flex w-100"
-                  src={fi3}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-flex w-100"
-                  src={fi4}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-            </Carousel>
-          </div>
-          <div className='seconddiv'>
-            <center>
+      <div className='slidera'>
+       <Homepageslider/>
+      </div>
+      <div className='seconddiv'>
+      <center>
               <span className='seconddivtext'>Our Purpose <br />Do More, Be more</span>
             </center>
-          </div>
-          <div className='thirddiv'>
-            <div className='ctdiva'>
+      </div>
+      <div className='thirddiv'>
+      <div className='ctdiva'>
               <p className='go'>Go with <br /> Trend</p><br />
             </div>
             <div className='ctdivb'>
               <CaroselProducta />
             </div>
-          </div>
-          <div className='fourthdiv'>
-            <div className='fourthdivtext'>
+      </div>
+      <div className='fourthdiv'>
+      <div className='fourthdivtext'>
               <p >Free Gold Membership<br /> for 2 Year</p>
               <button className='button btn btn-primary'>Shop Now</button>
             </div>
-
-          </div>
-          <div className='fifthdiv'>
-            <div className='fifthdivtext'>
+      </div>
+      <br />
+      <div className='fifthdiv'>
+      <div className='fifthdivtext'>
               <p>Spotlight-Worthy<br /> Sunglasses <br /> Buy 1 get 1 </p>
               <button className='buttonn btn btn-primary '>Shop Now</button>
             </div>
-
-          </div>
-
-          <center><hr></hr><h1>FIND THE PERFECT FIT</h1><hr></hr></center>
-          <center>
+      </div>
+      <center><hr></hr><h1>FIND THE PERFECT FIT</h1><hr></hr></center>
+      <center>
             <div className='hoverbox'>
 
             </div>
@@ -140,11 +107,8 @@ const Home = () => {
             <div className='sixthdiv sm container'><br />
               <img src={fi12} />
               <p className='sixthdivtext'>Available All Over India </p>
-
             </div>
           </center>
-          <Footer/>
-        </div>
       </div>
      </>
   )

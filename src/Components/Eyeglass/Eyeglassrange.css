@@ -7,7 +7,8 @@
     width: auto;
     height: 12vh;
     margin-bottom: .5vh;
-    background-color: aqua;
+    /* background-color: aqua; */
+    background:  url(/public//images/images.jpg) ;
 }
 .eyeseconddiv{
     display: flex;

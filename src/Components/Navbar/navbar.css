@@ -1,40 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-
-}
-
-.navvbar {
-    background-color: #E0E2E5;
-    display: flex;
-}
-.nalink {
-    margin: .7vw;
-    color: #0f0325;
-    font-size: large;
-}
-.navicon {
-    margin-left: 90px;
-    width: 50px;
-    height: 28px;
-    margin: 10px;
-}
-.nlst {
-}
-.inc
-{
-    position: relative;
-    margin: auto;
-}
 .brandlogo{
-    width: 9ch;
-    height: 9ch;
-    background-color:#E0E2E5 ;
-    margin-left:3%;
-    border-radius: 0px 0px 10px 10px;
+    width: auto;
+    height: 9vh;
+    margin: 1px 3vw;
+}
+.navbar{
+    background-color:#E0E2E5;
+    width: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.popo{
+    width: 26vw;
+    height: 8vh;
+    /* background-color: #10366e; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.navbar2{
+    background-color:#10366e;
+    width: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.cartcount{
+   
+    background-color: rgb(0, 34, 129);
+    color: aliceblue;
+    position: absolute;
+    top: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    
+
 }
 .cartico{
-    width: 33px;
-    height: 33px;
-    margin: 8px;
+    width: 38px;
+    height: 38px;
+}
+.nalink{
+    text-decoration: none;
+    color: rgb(192, 248, 234);
+    font-size: 19px;
+}
+.nalink:hover{
+    color: rgb(255, 255, 255);
 }
