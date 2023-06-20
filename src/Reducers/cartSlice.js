@@ -8,7 +8,14 @@ const { createSlice } = require('@reduxjs/toolkit');
 
 const cartSlice = createSlice({
     name: 'cart',
-    initialState : [],
+    initialState: {
+        data:[],
+        totalItems: 0,
+        totalAmount: 0,
+        deliveryCharge: 1000,
+        totalItems: 0,
+    },
+    
     reducers: {
         add(state, action) {
             // let find = state.product.findIndex((product) => product.Id === action.payload.id);
@@ -18,12 +25,12 @@ const cartSlice = createSlice({
             // else{
                 
             // }
-            const find = state.findIndex(item=>item.id===action.payload.id)
+            const find = state.data.findIndex(item=>item.id===action.payload.id)
             if(find>=0){
-                
+                alert("It Is Already Added to cart")
             }else{
                 // const tempvar = {...action.payload, quantity:3}
-                state.push(action.payload);
+                state.data.push(action.payload);
             }
             
         },
@@ -31,6 +38,8 @@ const cartSlice = createSlice({
             return state.filter((item) => item.id !== action.payload);
         },
     },
+    
+    
 });
 
 export const { add, remove } = cartSlice.actions;

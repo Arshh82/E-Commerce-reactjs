@@ -61,7 +61,7 @@ function Singleproduct() {
                     <button className='detailbtn mb-4'>Buy Now</button>
                     
                     <button className='detailbtnb' onClick={() => handleAdd(v)} >Add to Cart</button>
-                    {console.log(v)}
+                    {/* {console.log(v)} */}
                     
                   </div>
                 </div>

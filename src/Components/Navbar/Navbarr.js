@@ -15,7 +15,7 @@ import { HiShoppingCart } from "react-icons/hi";
 
 const Navbarr = () => {
   let fi12 = new URL("/public/images/Brandlogo/Brand logo.PNG", import.meta.url)
-  const products = useSelector((state) => state.cart);
+  const {data} = useSelector((state) => state.cart);
   return (
     <>
     <div className='sticky-top'>
@@ -36,7 +36,7 @@ const Navbarr = () => {
             <Link to='/cart'>
               <span> <HiShoppingCart className='cartico' />
               </span>
-              <span className='cartcount'>{products.length}</span>
+              <span className='cartcount'>{data.length}</span>
             </Link>
           </div>
           </div>
