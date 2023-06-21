@@ -54,6 +54,7 @@ const cartSlice = createSlice({
                 });
                 state.data = tempCart;
                 storeInLocalStorage(state.data);
+                alert("Product Is Already Added to Cart")
             } else {
                 state.data.push(action.payload);
                 storeInLocalStorage(state.data);
@@ -72,15 +73,17 @@ const cartSlice = createSlice({
             const tempCart = state.data.map(item => {
                 if(item.id === action.payload.id){
                     let tempQty = item.quantity;
-                    let tempTotalPrice = item.totalPrice;
+                    let tempQtyy = item.stockqwantity;
+                    // alert(tempQtyy)
+                    let tempTotalPrice = state.totalAmount;
                     if(action.payload.type === "INC"){
-                        tempQty++;
-                        tempTotalPrice = tempQty * item.price;
+                        tempQty>=tempQtyy ? tempQtyy-- :tempQty++;
+                        tempTotalPrice = tempQty * item.amount;
                     }
                     if(action.payload.type === "DEC"){
                         tempQty--;
                         if(tempQty < 1) tempQty = 1;
-                        tempTotalPrice = tempQty * item.price;
+                        tempTotalPrice = item.amount*tempQty  ;
                     }
                     return {...item, quantity: tempQty, totalPrice: tempTotalPrice};
                 } else {
@@ -90,10 +93,16 @@ const cartSlice = createSlice({
             state.data = tempCart;
             storeInLocalStorage(state.data);
         },
+        getCartTotal(state){
+            state.totalAmount = state.data.reduce((cartTotal, cartItem) => {
+                return cartTotal += cartItem.totalPrice;
+            }, 0);
+            state.totalItems = state.data.length;
+        }
     },
     
     
 });
 
-export const { add, remove, clearCart,toggleCartQty } = cartSlice.actions;
+export const { add, remove, clearCart,toggleCartQty,getCartTotal } = cartSlice.actions;
 export default cartSlice.reducer;

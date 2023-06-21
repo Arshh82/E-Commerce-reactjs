@@ -56,7 +56,7 @@ function Singleproduct() {
   // }
 
   const handleAdd = (product) => {
-    console.log(product)
+    // console.log(product)
     let totalPrice = qty * product.price;
     const tempProduct = {
       ...product,
@@ -85,9 +85,9 @@ function Singleproduct() {
                     <button className='detailbtn mb-4'>Buy Now</button>
                     
                     <button className='detailbtnb' onClick={() => handleAdd(v)} >Add to Cart</button>
-                    <button type = "button" className='qty-dec fs-14' onClick={() => decreaseQty()}>-</button>
+                    {/* <button type = "button" className='qty-dec fs-14' onClick={() => decreaseQty()}>-</button>
                     <button type = "button" className='qty-inc fs-14 text-light-blue' onClick={() => increaseQty()}>+</button>
-                    <h2>{qty}</h2>
+                    <h2>{qty}</h2> */}
                     {/* {console.log(v)} */}
                     
                   </div>

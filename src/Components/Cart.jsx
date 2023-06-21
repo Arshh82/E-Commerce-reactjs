@@ -1,34 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { getNodeText } from '@testing-library/react';
 import { useSelector, useDispatch } from 'react-redux';
-import { remove,clearCart,toggleCartQty } from '../Reducers/cartSlice';
+import { remove,clearCart,toggleCartQty,getCartTotal } from '../Reducers/cartSlice';
+import { AiOutlinePlus,AiOutlineMinus } from "react-icons/ai";
 import './Cart.css'
 
 const Cart = () => {
   const dispatch = useDispatch();
-    const {data,totalItems} = useSelector((state) => state.cart);
+    const {data,totalItems,totalAmount} = useSelector((state) => state.cart);
     console.log(data);
 
-    const [qty,setQty]= useState(1)
-    // console.log(totalItems)
+    useEffect(() => {
+      dispatch(getCartTotal());
+  }, [useSelector(state => state.cart)]); 
 
-    const handleRemove = (id) => {
+  const handleRemove = (id) => {
         dispatch(remove(id));
-        console.log(id)
-    };
-    
-    
-    const handleDecrement = (card_id) => {
-       
-      // data.map( (item)  => (
-      //   item.id === card_id ? setQty(qty+1) :console.log('ok') 
-      // )
-      //  )
+     }
 
-      // // console.log(card_id)
-      
-
-    }
 
     
   return (
@@ -45,35 +34,43 @@ const Cart = () => {
                     <td>
                         <img src={product.image} alt="Error" className='productimage' /></td>
                         <td><h5>{product.name}</h5></td>
-                        <td><h5>{product.amount*qty}</h5></td>
+                        <td><h5>{product.amount*product.quantity}</h5></td>
                        <td> <button
                             className="btn"
                             onClick={() => handleRemove(product.id)}
                         >
                             Remove
                         </button></td>
-                        <td>{ product.quantity}</td>
+                        <td></td>
+                        
                         <td>
                           <div className='proqwantity'>
-                      <button className='btn btn-secondary' onClick={() => dispatch(toggleCartQty({id: product.id, type: "INC"}))}> -</button>
-
-                      {/* <div>{amount}</div> */}
-                      {/* <button className='btn btn-primary' onClick={(setIncrease) => {
-                        amount < product.stockqwantity ? setAmount(amount + 1) : setAmount(product.stockqwantity);
-                      }}>+</button> */}
+                      <button className='btn' onClick={() => dispatch(toggleCartQty({id: product.id, type: "INC"}))}> 
+                      <AiOutlinePlus/>
+                      </button>
+                      { product.quantity}
+                      <button className='btn' onClick={() => {dispatch(toggleCartQty({id: product.id, type: "DEC"})) }}>
+                      <AiOutlineMinus/>
+                      </button>
                     </div>
                         </td>
 
                         </tbody>
-                        <button type = "button" className='btn-danger' onClick={() => dispatch(clearCart())}>
-                                    <span className = "fs-16">Clear Cart</span> 
-                                </button>
+                        
                         </table>
                     </div>
+                    
                 ))}
+                <button type = "button" className='btn-danger' onClick={() => dispatch(clearCart())}>
+                                    <span className = "fs-16">Clear Cart</span> 
+                                </button>
 
       </div>
       <div className='cartcalculation'>
+      <h2>Order Summary</h2>
+      <h2>Total Items</h2>
+      <td>{totalAmount}</td><br/>
+      <td>{totalItems}</td>
 
       </div>
      </div>
