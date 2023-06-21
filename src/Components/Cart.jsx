@@ -3,6 +3,7 @@ import { getNodeText } from '@testing-library/react';
 import { useSelector, useDispatch } from 'react-redux';
 import { remove,clearCart,toggleCartQty,getCartTotal } from '../Reducers/cartSlice';
 import { AiOutlinePlus,AiOutlineMinus } from "react-icons/ai";
+import { RiDeleteBin2Fill } from "react-icons/ri";
 import './Cart.css'
 
 const Cart = () => {
@@ -39,18 +40,23 @@ const Cart = () => {
                             className="btn"
                             onClick={() => handleRemove(product.id)}
                         >
-                            Remove
-                        </button></td>
+                           <RiDeleteBin2Fill/>
+                        </button>
+                        </td>
+                        <div></div>
                         <td></td>
                         
                         <td>
                           <div className='proqwantity'>
+                          
                       <button className='btn' onClick={() => dispatch(toggleCartQty({id: product.id, type: "INC"}))}> 
                       <AiOutlinePlus/>
+                      
                       </button>
                       { product.quantity}
                       <button className='btn' onClick={() => {dispatch(toggleCartQty({id: product.id, type: "DEC"})) }}>
                       <AiOutlineMinus/>
+                      
                       </button>
                     </div>
                         </td>
