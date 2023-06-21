@@ -1,19 +1,22 @@
 import React, { useState } from 'react'
 import { getNodeText } from '@testing-library/react';
 import { useSelector, useDispatch } from 'react-redux';
-import { remove } from '../Reducers/cartSlice';
+import { remove,clearCart,toggleCartQty } from '../Reducers/cartSlice';
 import './Cart.css'
 
 const Cart = () => {
   const dispatch = useDispatch();
     const {data,totalItems} = useSelector((state) => state.cart);
-    const [qty,setQty]= useState(1)
-    console.log(totalItems)
+    console.log(data);
 
-    const handleRemove = (productId) => {
-        dispatch(remove(productId));
+    const [qty,setQty]= useState(1)
+    // console.log(totalItems)
+
+    const handleRemove = (id) => {
+        dispatch(remove(id));
+        console.log(id)
     };
-    console.log(totalItems)
+    
     
     const handleDecrement = (card_id) => {
        
@@ -27,12 +30,7 @@ const Cart = () => {
 
     }
 
-    const [quantity,setQuantity] = useState('');
-    const [editQuantity,setEditQuantity] = useState({
-      id:'',
-      status:false
-    })
-
+    
   return (
     <>   
      <div className="cartt">
@@ -54,10 +52,10 @@ const Cart = () => {
                         >
                             Remove
                         </button></td>
-                        <td>{ totalItems}</td>
+                        <td>{ product.quantity}</td>
                         <td>
                           <div className='proqwantity'>
-                      <button className='btn btn-secondary' onClick={ () =>  handleDecrement(product.id, totalItems+1 )}> -</button>
+                      <button className='btn btn-secondary' onClick={() => dispatch(toggleCartQty({id: product.id, type: "INC"}))}> -</button>
 
                       {/* <div>{amount}</div> */}
                       {/* <button className='btn btn-primary' onClick={(setIncrease) => {
@@ -67,6 +65,9 @@ const Cart = () => {
                         </td>
 
                         </tbody>
+                        <button type = "button" className='btn-danger' onClick={() => dispatch(clearCart())}>
+                                    <span className = "fs-16">Clear Cart</span> 
+                                </button>
                         </table>
                     </div>
                 ))}

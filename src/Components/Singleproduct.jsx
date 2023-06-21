@@ -14,7 +14,25 @@ const API = "https://arshil-eyewear.onrender.com/Eyeglassrangeapi/"
 function Singleproduct() {
   const dispatch = useDispatch();
   const { data: products, status } = useSelector((state) => state.product);
+  const [qty, setQty] = useState(1);
   
+  const increaseQty = () => {
+    setQty((prevQty) => {
+      let newQty = prevQty + 1;
+      return newQty;
+    })
+  }
+
+  const decreaseQty = () => {
+    setQty((prevQty) => {
+      let newQty = prevQty - 1;
+      if(newQty < 1){
+        newQty = 1;
+      }
+      return newQty;
+    })
+  }
+
   const [loading,setLoading] = useState(true);
   // const [product, setProduct] = useState([
   //   {
@@ -38,7 +56,13 @@ function Singleproduct() {
   // }
 
   const handleAdd = (product) => {
-    dispatch(add(product));
+    console.log(product)
+    let totalPrice = qty * product.price;
+    const tempProduct = {
+      ...product,
+      quantity: qty,
+      totalPrice}
+    dispatch(add(tempProduct));
 };
   return (
     <>
@@ -61,6 +85,9 @@ function Singleproduct() {
                     <button className='detailbtn mb-4'>Buy Now</button>
                     
                     <button className='detailbtnb' onClick={() => handleAdd(v)} >Add to Cart</button>
+                    <button type = "button" className='qty-dec fs-14' onClick={() => decreaseQty()}>-</button>
+                    <button type = "button" className='qty-inc fs-14 text-light-blue' onClick={() => increaseQty()}>+</button>
+                    <h2>{qty}</h2>
                     {/* {console.log(v)} */}
                     
                   </div>
