@@ -27,29 +27,19 @@ const Cart = () => {
       <div className='cartitems'>
       {data.map((product) => (
                     <div key={product.id} className="cartCard">
-                    <table className='table table-bordered text-center table-hover '>
-                    <th>Product</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <tbody>
-                    <td>
-                        <img src={product.image} alt="Error" className='productimage' /></td>
-                        <td><h5>{product.name}</h5></td>
-                        <td><h5>{product.amount*product.quantity}</h5></td>
-                       <td> <button
-                            className="btn"
-                            onClick={() => handleRemove(product.id)}
-                        >
-                           <RiDeleteBin2Fill/>
-                        </button>
-                        </td>
-                        <div></div>
-                        <td></td>
-                        
-                        <td>
-                          <div className='proqwantity'>
-                          
-                      <button className='btn' onClick={() => dispatch(toggleCartQty({id: product.id, type: "INC"}))}> 
+                   
+                    <div className='imgdiv'>
+                    <img src={product.image} alt="Error" className='productimage' />
+                    </div>
+
+                    <div>
+                    <span>Name</span>
+                    <h5>{product.name}</h5>
+                    
+                    <span>Product Price</span>
+                    <h5>{product.amount}</h5>
+                    <span>Qty:</span>
+                    <button className='btn' onClick={() => dispatch(toggleCartQty({id: product.id, type: "INC"}))}> 
                       <AiOutlinePlus/>
                       
                       </button>
@@ -59,30 +49,87 @@ const Cart = () => {
                       
                       </button>
                     </div>
-                        </td>
 
-                        </tbody>
+                    <div>
+                    <span>Remove Item</span><br/>
+                      <button
+                            className="btn"
+                            onClick={() => handleRemove(product.id)}
+                        >
+                           <RiDeleteBin2Fill/>
+                        </button>
+                        </div>
+
+
+                    <div>
+                    <span>Subtotal</span>
+                    <h5>{product.amount*product.quantity}</h5>
+                    </div>
+
+                    
+
+
+
+
+                    
+                    
+                   
+                   
                         
-                        </table>
                     </div>
                     
                 ))}
-                <button type = "button" className='btn-danger' onClick={() => dispatch(clearCart())}>
+                <div >
+                <hr></hr>
+            <button type = "button" className='btn btn-danger' onClick={() => dispatch(clearCart())}>
                                     <span className = "fs-16">Clear Cart</span> 
-                                </button>
+                                </button>     
+            </div>
 
       </div>
       <div className='cartcalculation'>
-      <h2>Order Summary</h2>
-      <h2>Total Items</h2>
-      <td>{totalAmount}</td><br/>
-      <td>{totalItems}</td>
+      <div className='cart-title mt-2'>
+      <h3>Order Summary</h3>
+      </div>
+      <div className='cart-it'>
+      <ul className='no-bullets'>
+        <li>
+        <span>Total <span className='boldd'>{totalItems}</span> Items </span>
+        </li>
+        <li>
+        <span>Delivery charge <span className='boldd'>350 Rs. </span> </span>
+        </li>
+        <li>
+        <span>Discount <span className='boldd'>0 Rs.</span></span>
+        </li>
+        
+      </ul>
+      </div>
+      <div className='chkout'>
+      <div className='cart-total mt-2'>
+      <ul className='no-bullets m-2'>
+        <li>
+        <span className='spn'>Grand Total Rs. </span>
+        <span className='boldd'>{totalAmount+350} Rs.</span>
+        </li>
+      </ul>
+     
+      </div>
+      <div>
+      <button className='chkoutbtn btn btn-warning mt-1'>Proceed to Checkout </button>
 
       </div>
+      </div>
+      <h2></h2>
+      <td>{}</td><br/>
+      <td></td>
+      
+
+      </div>
+      
+      
      </div>
-            <div >
-                
-            </div>
+            
 
     </>
   )
