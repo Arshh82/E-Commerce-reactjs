@@ -89,9 +89,9 @@
     align-items: center;
     font-size: x-large;
 }
-.imgdiv{
+.iimgdiv{
     margin-top: 0;
-    max-width: 25%;
-    min-width: 25%;
+    max-width: 35%;
+    min-width: 35%;
     /* background-color: blue; */
 }

@@ -8,14 +8,20 @@ import "../Navbar/navbar.css"
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { FiShoppingCart,FiUser } from 'react-icons/fi';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { HiShoppingCart } from "react-icons/hi";
+import { useEffect } from 'react';
+import { getCartTotal,toggleCartQty } from '../../Reducers/cartSlice';
 
 
 
 const Navbarr = () => {
+  const dispatch = useDispatch();
   let fi12 = new URL("/public/images/Brandlogo/Brand logo.PNG", import.meta.url)
   const {data} = useSelector((state) => state.cart);
+  useEffect(() => {
+    dispatch(getCartTotal());
+}, [useSelector(state => state.cart)]); 
   return (
     <>
     <div className='sticky-top'>
@@ -34,7 +40,7 @@ const Navbarr = () => {
           
           <div >
             <Link to='/cart'>
-              <span> <HiShoppingCart className='cartico' />
+              <span> <HiShoppingCart className='cartico' onClick={() => dispatch(toggleCartQty({data, type: "DEC"}))} />
               </span>
               <span className='cartcount'>{data.length}</span>
             </Link>

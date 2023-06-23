@@ -28,7 +28,7 @@ const Cart = () => {
       {data.map((product) => (
                     <div key={product.id} className="cartCard">
                    
-                    <div className='imgdiv'>
+                    <div className='iimgdiv'>
                     <img src={product.image} alt="Error" className='productimage' />
                     </div>
 
@@ -110,7 +110,7 @@ const Cart = () => {
       <ul className='no-bullets m-2'>
         <li>
         <span className='spn'>Grand Total Rs. </span>
-        <span className='boldd'>{totalAmount+350} Rs.</span>
+        <span className='boldd'>{totalAmount} Rs.</span>
         </li>
       </ul>
      

@@ -85,6 +85,11 @@ const cartSlice = createSlice({
                         if(tempQty < 1) tempQty = 1;
                         tempTotalPrice = item.amount*tempQty  ;
                     }
+                    if(action.payload.type === "NU"){
+                        tempQty--;
+                        if(tempQty < 1) tempQty = 1;
+                        tempTotalPrice = item.amount*tempQty  ;
+                    }
                     return {...item, quantity: tempQty, totalPrice: tempTotalPrice};
                 } else {
                     return item;
@@ -95,7 +100,7 @@ const cartSlice = createSlice({
         },
         getCartTotal(state){
             state.totalAmount = state.data.reduce((cartTotal, cartItem) => {
-                return cartTotal += cartItem.totalPrice;
+                return cartTotal += cartItem.totalPrice+350;
             }, 0);
             state.totalItems = state.data.length;
         }
