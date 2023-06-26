@@ -362,12 +362,7 @@
 
 /* ----------------------------------------------------------- */
 @media (max-width: 767px) {
-    .brandlogo {
-        width: 6.5ch;
-        height: 6.5ch;
-        margin-left: 40%;
-        margin-top: 0ch;
-    }
+ 
 
     .homecontainer {
         width: 100vw;
@@ -514,3 +509,49 @@
         font-weight: 600;
     }
 }
+
+@media (max-width: 766px) {
+ 
+    .firstdiv {
+        width: 100vw;
+        height: 24vh;
+        margin-bottom: 1vh;
+    }
+    .imgdiv {
+        width: 30.5vw;
+        height: 15vh;
+        background-color: rgb(218, 35, 35);
+        margi7n: .5vw;
+        border-radius: 3px;
+    }
+    .imageparent {
+    background-color: rgb(101, 11, 211);
+    min-width: 28vw;
+    max-width: 28vw;
+    height: 10vh;
+    border-radius: 8px;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgdiv:hover {
+    -webkit-transition: .3s;
+    height: 79%;
+    background: #123b79;
+    color: antiquewhite;
+}
+
+
+.imgeyecontrol {
+    background-color: #b87932;
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+ 
+
+   
+}
+

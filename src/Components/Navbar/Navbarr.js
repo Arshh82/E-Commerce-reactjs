@@ -12,6 +12,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { HiShoppingCart } from "react-icons/hi";
 import { useEffect } from 'react';
 import { getCartTotal,toggleCartQty } from '../../Reducers/cartSlice';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+
+
+
 
 
 
@@ -23,20 +28,52 @@ const Navbarr = () => {
     dispatch(getCartTotal());
 }, [useSelector(state => state.cart)]); 
 
-  
+  // const [smmmenu,setSmmmenu] = useEffect(false)
+  const [display,setDisplay]=useState(false)
+
+  // const displayname = () => {
+  //   if(display === true ){
+  //     setDisplay(false)
+  //     alert
+  //   }else{
+  //     setDisplay(true)
+  //   }
+    
+  // }
 
   return (
     <>
+  {
+    display?
+  
+    <div className='smmenu'>
+       <div className='smmenuclose' onClick={() => setDisplay(false)} >
+      <AiOutlineClose></AiOutlineClose>
+      </div>
+       <div className='smmenunavbar  '>
+      <Link to="/eyeglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Eye Glass</Link>
+        <Link to="/computerglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Computer Glass</Link>
+        <Link to="/kidsglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Kids Glass</Link>
+        <Link to="/sunglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Sun Glasses</Link>
+        <Link to="/storelocator" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Store Locator</Link>
+        <Link to="/admin" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Admin Login</Link>
+        
+        </div>
+      
+    </div>:null
+  }
     <div className='sticky-top'>
         <div className='navbar  '>
-        
+        <div className='menu-tog m-2'onClick={() => setDisplay(true)} >
+          <GiHamburgerMenu></GiHamburgerMenu>
+        </div>
           <div>
             <Link to='/'><img src={fi12} alt='no_img' className='brandlogo ' /></Link>
           </div>
           <div className='popo'>
           
           <div>
-            <Link><FiUser className='cartico' /></Link>
+            <Link><FiUser className='cartico m-3' /></Link>
           </div>
           
           <div >

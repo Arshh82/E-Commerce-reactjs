@@ -37,11 +37,13 @@ const Home = () => {
             </div>
 
             <div className='imgdiv'>
-              <div className='imageparent'><img src={fi9} alt='no-img' className='imgeyecontrol' /></div>
+              <div className='imageparent'>
+              <img src={fi9} alt='no-img' className='imgeyecontrol' />
+              </div>
               <div><center className='headname'><p>Contact lenses</p></center></div>
             </div>
 
-            <div className='imgdiv'>
+            {/* <div className='imgdiv'>
               <div className='imageparent'><img src={fi10} alt='no-img' className='imgeyecontrol' /></div>
               <div><center className='headname'><p>Power Sunglasses</p></center></div>
             </div>
@@ -54,7 +56,7 @@ const Home = () => {
             <div className='imgdiv'>
               <div className='imageparent'><img src={fi7} alt='no-img' className='imgeyecontrol' /></div>
               <div><center className='headname'><p>Sunglasses</p></center></div>
-            </div>
+            </div> */}
           </div>
       <div className='slidera'>
        <Homepageslider/>
