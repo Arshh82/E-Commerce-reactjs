@@ -9,7 +9,8 @@ import { add } from '../../Reducers/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 
-const EyeglassrangeCard = () => { const dispatch = useDispatch();
+const EyeglassrangeCard = () => { 
+  const dispatch = useDispatch();
   const { data: products, status } = useSelector((state) => state.product);
 
   useEffect(() => {

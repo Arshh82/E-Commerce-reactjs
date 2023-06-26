@@ -1,0 +1,32 @@
+.add
+{
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+}
+#subbtn{
+  font-size: 15px;
+  margin: 15px;
+  margin-left: 0px;
+}
+.detail-form
+{
+    background-color: blue;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.detail-forma{
+    width: 20vw;
+    height: 60%;
+    background-color: blueviolet;
+}
+.detail-formb{
+    width: 20vw;
+    height: 60%;
+    background-color: rgb(24, 111, 224);
+}

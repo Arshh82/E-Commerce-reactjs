@@ -16,6 +16,7 @@ import Singleproduct from './Components/Singleproduct';
 import Cart from './Components/Cart';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
+import Admin from './Components/Adminpanel/Admin';
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
         <Route path='/caroselProducta' element={<CaroselProducta />}></Route>
         <Route path='/singleproduct/:id' element={<Singleproduct />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
+        <Route path='/admin' element={<Admin />}></Route>
       </Routes> 
       <Footer/>
       </BrowserRouter>

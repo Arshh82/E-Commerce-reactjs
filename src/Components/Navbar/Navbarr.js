@@ -54,7 +54,7 @@ const Navbarr = () => {
         <Link to="/kidsglass" className='nalink' style={{ textDecoration: 'none' }}>Kids Glass</Link>
         <Link to="/sunglass" className='nalink' style={{ textDecoration: 'none' }}>Sun Glasses</Link>
         <Link to="/storelocator" className='nalink' style={{ textDecoration: 'none' }}>Store Locator</Link>
-        <Link to="/storelocator" className='nalink' style={{ textDecoration: 'none' }}>Admin Login</Link>
+        <Link to="/admin" className='nalink' style={{ textDecoration: 'none' }}>Admin Login</Link>
         
       </div>
       </div>
