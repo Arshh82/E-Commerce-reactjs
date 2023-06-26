@@ -5,16 +5,16 @@ import EyeglassrangeCard from './EyeglassrangeCard'
 import { useSelector } from 'react-redux'
 
 const Eyeglassrange = () => {
-  const product = useSelector((state) => state.product)
+  // const product = useSelector((state) => state.product)
   return (
     <>
       <div className='eyefirstdiveyegl'>
       </div>
-      <div>
+      {/* <div>
       <center>
-        <h4 className='mt-3'>Showing Top {product.data.length} Glasses  </h4>
+        
         </center>
-      </div>
+      </div> */}
       <div className='eyeseconddiv '>
         <div className='seconddiva  '>
         <p>Price Range</p>

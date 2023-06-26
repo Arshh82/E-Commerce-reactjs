@@ -18,18 +18,13 @@ import { getCartTotal,toggleCartQty } from '../../Reducers/cartSlice';
 const Navbarr = () => {
   const dispatch = useDispatch();
   let fi12 = new URL("/public/images/Brandlogo/Brand logo.PNG", import.meta.url)
-  const {data} = useSelector((state) => state.cart);
+  const {data,totalItems} = useSelector((state) => state.cart);
   useEffect(() => {
     dispatch(getCartTotal());
 }, [useSelector(state => state.cart)]); 
 
   
-const [term,setTerm] = useState("");
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    console.log(term);
-  }
   return (
     <>
     <div className='sticky-top'>
@@ -39,11 +34,7 @@ const [term,setTerm] = useState("");
             <Link to='/'><img src={fi12} alt='no_img' className='brandlogo ' /></Link>
           </div>
           <div className='popo'>
-          <div>
-          <form onSubmit={submitHandler}>
-            <input type='text' value={term} placeholder='Search product ' onChange={(e) => setTerm(e.target.value)}/>
-            </form>
-          </div>
+          
           <div>
             <Link><FiUser className='cartico' /></Link>
           </div>
@@ -52,7 +43,7 @@ const [term,setTerm] = useState("");
             <Link to='/cart'>
               <span> <HiShoppingCart className='cartico' onClick={() => dispatch(toggleCartQty({data, type: "DEC"}))} />
               </span>
-              <span className='cartcount'>{data.length}</span>
+              <span className='cartcount'>{totalItems}</span>
             </Link>
           </div>
           </div>
