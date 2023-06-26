@@ -1,9 +1,6 @@
 const { createSlice } = require('@reduxjs/toolkit');
 
-// const initialState = {
-//     carts:[],
-//     quantity:0,
-// }
+
 const fetchFromLocalStorage = () => {
     let cart = localStorage.getItem('cart');
     if(cart){
@@ -28,18 +25,7 @@ const cartSlice = createSlice({
     },
     
     reducers: {
-        // add(state, action) {
-            
-        //     const find = state.data.findIndex(item=>item.id===action.payload.id)
-        //     if(find>=0){
-        //         alert("It Is Already Added to cart")
-        //     }else{
-        //         // const tempvar = {...action.payload, quantity:3}
-        //         state.data.push(action.payload);
-        //         storeInLocalStorage(state.data);
-        //     }
-            
-        // },
+       
         add(state, action){
             const tempItem = state.data.find(item => item.id === action.payload.id);
             if(tempItem){

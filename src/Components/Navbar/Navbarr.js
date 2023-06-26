@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -22,6 +22,14 @@ const Navbarr = () => {
   useEffect(() => {
     dispatch(getCartTotal());
 }, [useSelector(state => state.cart)]); 
+
+  
+const [term,setTerm] = useState("");
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(term);
+  }
   return (
     <>
     <div className='sticky-top'>
@@ -32,7 +40,9 @@ const Navbarr = () => {
           </div>
           <div className='popo'>
           <div>
-            <input type='text'/>
+          <form onSubmit={submitHandler}>
+            <input type='text' value={term} placeholder='Search product ' onChange={(e) => setTerm(e.target.value)}/>
+            </form>
           </div>
           <div>
             <Link><FiUser className='cartico' /></Link>
