@@ -11,60 +11,47 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const EyeglassrangeCard = () => { const dispatch = useDispatch();
   const { data: products, status } = useSelector((state) => state.product);
-  const [loading,setLoading]= useState(true)
-  // const [products, setProducts] = useState([]);
 
   useEffect(() => {
-      dispatch(fetchProducts());
-      // const fetchProducts = async () => {
-      //     const res = await fetch('https://fakestoreapi.com/products');
-      //     const data = await res.json();
-      //     console.log(data);
-      //     setProducts(data);
-      // };
-      // fetchProducts();
+    dispatch(fetchProducts());
   }, []);
 
-  // const handleAdd = (product) => {
-  //     dispatch(add(product));
-  // };
-  const [term,setTerm] = useState('');
+  const [term, setTerm] = useState('');
 
   const submitHandler = (e) => {
     e.preventDefault();
     console.log(term);
   }
 
-
-
   if (status === STATUSES.LOADING) {
-      return <h2>Loading....</h2>;
+    return <h2>Loading....</h2>;
   }
 
   if (status === STATUSES.ERROR) {
-      return <h2>Something went wrong!</h2>;
+    return <h2>Something went wrong!</h2>;
   }
   
   return (
     <>
-      <div className='srchdiv  sticky-top'>
+      
+      <div>
+      <div className='srchdiv'>
         <form onSubmit={submitHandler} className='form-primary'>
           <input className='inputform' type='text' value={term} placeholder='Search product ' style={{ textTransform: "capitalize" }} onChange={(e) => setTerm(e.target.value)} />
         </form>
         <h4 className='mt-3'>Showing Top {products.length} Glasses  </h4>
       </div>
-      <div>
         {products.filter((v) => {
           if (term === "") {
             return v;
-          } else if (v.name.toLowerCase().includes(term.toLowerCase())) {
+          }
+          else if (v.name.toLowerCase().includes(term.toLowerCase())) {
             return v;
           }
         })
           .map((v) => {
             return (
               <Link to={`/singleproduct/${v.id}`} key={v.id}>
-
                 <section style={{ backgroundColor: "white" }} >
                   <div className="" >
                     <div className="coloumn justify-content-start ">
@@ -88,7 +75,6 @@ const EyeglassrangeCard = () => { const dispatch = useDispatch();
                               <h5 className="card-title mt-2">{v.name}</h5>
                               <h6 className="text-muted mb-2">Size {v.size}</h6>
                               <h6 className='mb-2'>Rs.{v.amount} <span className='text-muted'>(+GST)</span></h6>
-
                             </div>
                             <div>
                             </div>
@@ -102,7 +88,7 @@ const EyeglassrangeCard = () => { const dispatch = useDispatch();
             )
           })}
       </div>
-            </>
+    </>
   )
 }
 

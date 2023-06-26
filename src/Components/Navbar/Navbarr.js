@@ -52,7 +52,6 @@ const Navbarr = () => {
       <Link to="/eyeglass" className='nalink' style={{ textDecoration: 'none' }}>Eye Glass</Link>
         <Link to="/computerglass" className='nalink' style={{ textDecoration: 'none' }}>Computer Glass</Link>
         <Link to="/kidsglass" className='nalink' style={{ textDecoration: 'none' }}>Kids Glass</Link>
-        <Link to="/contactlenses" className='nalink' style={{ textDecoration: 'none' }}>Contact Lenses</Link>
         <Link to="/sunglass" className='nalink' style={{ textDecoration: 'none' }}>Sun Glasses</Link>
         <Link to="/storelocator" className='nalink' style={{ textDecoration: 'none' }}>Store Locator</Link>
         <Link to="/storelocator" className='nalink' style={{ textDecoration: 'none' }}>Admin Login</Link>

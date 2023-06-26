@@ -4,27 +4,15 @@ import { Eyeglassrangeapi } from '../../Apijson/Eyeglasshome/EyeglassA'
 import EyeglassrangeCard from './EyeglassrangeCard'
 import { useSelector } from 'react-redux'
 
+let fi1 = new URL("/public/images/offer.JPG", import.meta.url)
 const Eyeglassrange = () => {
-  // const product = useSelector((state) => state.product)
   return (
     <>
       <div className='eyefirstdiveyegl'>
+      <img src={fi1} alt='no' className='imghg'/> <span className='banerofer'>Special Season Offer Buy Any 3 Glasses Get 25% Off</span>
       </div>
-      {/* <div>
-      <center>
-        
-        </center>
-      </div> */}
       <div className='eyeseconddiv '>
         <div className='seconddiva  '>
-        <p>Price Range</p>
-        <button>Rs.1000 - 1500/-</button>
-        <button>Rs.1500 - 2500/-</button>
-        <button>Rs.2500 - 3500/-</button>
-        <button>Under 5000</button>
-        <button>Under 10000</button>
-        <button>Under 10000</button>
-        <button>Under 10000</button>
         </div>
         <div className='seconddivb '>
           <EyeglassrangeCard />

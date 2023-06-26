@@ -8,7 +8,18 @@
     height: 12vh;
     margin-bottom: .5vh;
     /* background-color: aqua; */
+    
     background:  url(/public//images/images.jpg) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imghg{
+    width: auto;
+    height: 80%;
+}
+.banerofer{
+    font-size: xx-large;
 }
 .eyeseconddiv{
     display: flex;
@@ -17,7 +28,7 @@
 .seconddiva{
     width: 12vw;
     height: 100vh;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(255, 255, 255);
 }
 .seconddivb{
     min-width: 90vw;
