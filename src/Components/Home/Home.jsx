@@ -6,6 +6,7 @@ import CaroselProducta from './CaroselProducta';
 import Footer from '../Footer/Footer'
 import Homepageslider from './Homepageslider';
 import { CCarousel,CCarouselItem,CImage } from '@coreui/react'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   let fi1 = new URL("/public/images/HomeCarosel/cimg (1).jpg", import.meta.url)
@@ -65,36 +66,47 @@ const Home = () => {
           </div>
 
         <div className='firstdivb'>
-
+          <Link to="/eyeglass">
           <div className='fa'>
             <img src={fi6} alt='no-img' className='fa-img' />
             <center><span className='fa-text'>Eyeglasses</span></center>
           </div>
+          </Link>
 
+          <Link to="/computerglass">
           <div className='fb'>
             <img src={fi8} alt='no-img' className='fa-img' />
             <center><span className='fa-text'>Computer glasses</span></center>
           </div>
+          </Link>
 
+          <Link to="/kidsglass">
           <div className='fc'>
             <img src={fi9} alt='no-img' className='fa-img' />
             <center><span className='fa-text'>Contact lenses</span></center>
           </div>
+          </Link>
 
+          <Link to="/eyeglass">
           <div className='fd'>
             <img src={fi10} alt='no-img' className='fa-img' />
             <center><span className='fa-text'>Power Sunglasses</span></center>
           </div>
+          </Link>
 
+          <Link to="/eyeglass">
           <div className='fe'>
             <img src={fi11} alt='no-img' className='fa-img' />
             <center><span className='fa-text'>Progressive Lenses</span></center>
           </div>
-
+          </Link>
+          
+          <Link to="/sunglass">
           <div className='ff'>
             <img src={fi7} alt='no-img' className='fa-img' />
             <center><span className='fa-text'>Sunglasses</span></center>
           </div>
+          </Link>
 
         </div>
 

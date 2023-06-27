@@ -31,6 +31,7 @@ const Cart = () => {
                     <div className='iimgdiv'>
                     <img src={product.image} alt="Error" className='productimage' />
                     </div>
+                    <hr></hr>
 
                     <div>
                     <span>Name</span>
@@ -59,24 +60,13 @@ const Cart = () => {
                            <RiDeleteBin2Fill/>
                         </button>
                         </div>
-
-
                     <div>
                     <span>Subtotal</span>
                     <h5>{product.amount*product.quantity}</h5>
                     </div>
-
                     
-
-
-
-
-                    
-                    
-                   
-                   
-                        
                     </div>
+                    
                     
                 ))}
                 <div >
