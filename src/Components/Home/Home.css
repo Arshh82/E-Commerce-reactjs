@@ -33,6 +33,9 @@
 .firstdivb{
     display: none;
 }
+.slider-sm{
+    display: none;
+}
 
 .imgdiv {
     width: 16vw;
@@ -200,12 +203,15 @@
     float: left;
 }
 
-.buttonn {
+.buttonn,.buttonnn {
     width: 200px;
     height: 50px;
     font-size: 1.5rem;
     font-weight: 5400;
+    background-color: #123b79;
+    color: wheat;
 }
+
 
 .fifthdiv {
     width: auto;
