@@ -17,15 +17,15 @@ import Card from 'react-bootstrap/Card';
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2
+          items: 4
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+          breakpoint: { max: 388, min: 0 },
+          items: 3
         }
       };
    return (
-       <div>
+       <div className='carodiv'>
            <Carousel responsive={responsive}
                ssr={true}
                autoPlay={false}
@@ -41,7 +41,7 @@ import Card from 'react-bootstrap/Card';
                    <Card.Img variant="top" className='cardAimg  mb-2' src={cc.image} />
                    <Card.Body>
                    <center >
-                     <Card.Title className='mb-3'>{cc.name}</Card.Title>
+                     <Card.Title className='card-text'>{cc.name}</Card.Title>
                      <Button className='cardAbtn' variant="primary"><p>Explore</p></Button>
                      </center>
                    </Card.Body>

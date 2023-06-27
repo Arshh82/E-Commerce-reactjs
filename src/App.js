@@ -17,6 +17,8 @@ import Cart from './Components/Cart';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Admin from './Components/Adminpanel/Admin';
+import '@coreui/coreui/dist/css/coreui.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <>
