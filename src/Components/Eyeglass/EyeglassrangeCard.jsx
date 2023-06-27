@@ -55,7 +55,7 @@ const EyeglassrangeCard = () => {
               <Link to={`/singleproduct/${v.id}`} key={v.id}>
                 <section style={{ backgroundColor: "white" }} >
                   <div className="" >
-                    <div className="coloumn justify-content-start ">
+                    <div className="coloumn justify-content-center ">
                       <div className="col-md-8 col-lg-6 col-xl-3 carda ">
                         <div className="card text-black  cccard">
                           <div className='imgcarddd' key={v.id}>

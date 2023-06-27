@@ -47,7 +47,7 @@
 .detailamount{
     font-family: 'Urbanist', sans-serif;
     font-weight: 550;
-    color: rgb(3, 211, 183);
+    /* color: rgb(3, 211, 183); */
     font-size: 2.1rem;
 }
 .detailbtn{
@@ -79,4 +79,42 @@
     
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+@media (max-width: 766px) {
+    .productdetail{
+        /* background-color: blueviolet; */
+        margin-top: 45vw;
+        margin-left: -50vw;
+        width: 85vw;
+        height: 50vh;
+    }
+    .productdetailspage{
+        width: 100vw;
+        height: 75vh;
+        /* background-color: rgb(2, 65, 65); */
+        margin-top: 5vw;
+        display: flex;
+        
+    }
+    .detailname{
+        font-family: 'Kalam', cursive;
+        font-size: 1.3rem;
+    
+    }
+    .detailamount{
+     
+        font-size: 1.5rem;
+    }
+    .img-a
+{
+    width: 52vw;
+    margin: 0px 0px 3px 4vw;
 
+}
+.detailbtnb{
+    width: 60%;
+}
+.detailbtn{
+    width: 60%;}
+    
+
+}

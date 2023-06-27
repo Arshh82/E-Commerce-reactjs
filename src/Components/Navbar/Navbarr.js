@@ -46,12 +46,13 @@ const Navbarr = () => {
   {
     display?
   
-    <div className='smmenu'>
+    <div className='smmenu fixed-top'>
        <div className='smmenuclose' onClick={() => setDisplay(false)} >
       <AiOutlineClose></AiOutlineClose>
       </div>
        <div className='smmenunavbar  '>
-      <Link to="/eyeglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Eye Glass</Link>
+       <Link to="/" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Home</Link>
+       <Link to="/eyeglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Eye Glass</Link>
         <Link to="/computerglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Computer Glass</Link>
         <Link to="/kidsglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Kids Glass</Link>
         <Link to="/sunglass" className='nalink' style={{ textDecoration: 'none' }} onClick={() => setDisplay(false)}>Sun Glasses</Link>

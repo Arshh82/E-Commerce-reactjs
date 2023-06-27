@@ -91,6 +91,7 @@
     /* background-color: blueviolet; */
 }
 .cccard{
+    
     /* background-color: cornflowerblue; */
 }
 .srchdiv{
@@ -113,4 +114,49 @@
     color: rgb(0, 0, 0);
 
 }
+
+@media (max-width: 766px) {
+    .seconddiva{
+       display: none;
+    }
+    .seconddivb{
+        min-width: 100%;
+        max-width: 100%;
+        /* background-color: aqua; */
+    }
+    .carda{
+        float: left;
+        margin: 15px 10px 60px 23px;
+        width: 40ch;
+        min-height: 30ch;
+        max-height: 30ch;
+        border-width: 0.1px;
+        /* background-color: blueviolet; */
+    }
+    .carddb{
+        display: none;
+        
+    }
+    .imghg{
+        width: auto;
+        height: 50%;
+        margin-right: 10px;
+    }
+    .banerofer{
+        font-size: large;
+        font-weight: 700;
+        margin: 10px;
+    }
+    .inputform
+{
+
+    width: 12rem;
+    height:5vh;
+    margin: 2.5vw;
+
+
+}
+
+}
+
 

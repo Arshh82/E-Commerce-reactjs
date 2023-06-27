@@ -27,7 +27,7 @@ const Eyeglassslider = (cc) => {
         <div>
             <Carousel responsive={responsive}
                 ssr={true}
-                autoPlay={true}
+                autoPlay={false}
                 autoPlaySpeed={800}
                 infinite={true}
                 customTransition="all .5"

@@ -63,3 +63,32 @@
     font-weight: 600;
     color: aliceblue;
 }
+@media (max-width: 766px) {
+    .EyeglassslidercardA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 70%;
+        max-width: 70%;
+        min-height: 21.5vh;
+        max-height: 21.5vh;
+        margin:  25px;
+        margin-left: 60px;
+        /* background-color: rgb(168, 22, 22); */
+    }
+    .Eyeglasssliderimg {
+        width: 95%;
+        height: auto;
+    }
+    .btna{
+        border: none;
+        border-radius: 15px;
+        background-color: rgb(28, 180, 185);
+        width: 30vw;
+        height: 5vh;
+        font-weight: 600;
+        color: aliceblue;
+    }
+    
+
+}
