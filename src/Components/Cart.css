@@ -11,7 +11,7 @@
     width: 55vw;
     height: auto;
     overflow-y: scroll;
-    background-color: rgb(7, 78, 78);
+    /* background-color: rgb(7, 78, 78); */
     margin-top: 50px;
 }
 .cartcalculation{
