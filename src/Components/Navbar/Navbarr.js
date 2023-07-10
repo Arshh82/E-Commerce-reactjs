@@ -28,18 +28,7 @@ const Navbarr = () => {
     dispatch(getCartTotal());
 }, [useSelector(state => state.cart)]); 
 
-  // const [smmmenu,setSmmmenu] = useEffect(false)
   const [display,setDisplay]=useState(false)
-
-  // const displayname = () => {
-  //   if(display === true ){
-  //     setDisplay(false)
-  //     alert
-  //   }else{
-  //     setDisplay(true)
-  //   }
-    
-  // }
 
   return (
     <>
