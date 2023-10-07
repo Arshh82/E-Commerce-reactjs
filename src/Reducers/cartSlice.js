@@ -86,7 +86,8 @@ const cartSlice = createSlice({
         },
         getCartTotal(state){
             state.totalAmount = state.data.reduce((cartTotal, cartItem) => {
-                return cartTotal += cartItem.totalPrice+350;
+                // alert(cartItem.totalPrice)
+                return cartTotal += cartItem.totalPrice;
             }, 0);
             state.totalItems = state.data.length;
         }
